@@ -1,0 +1,51 @@
+.supplies {
+  background-image: url(img/bagg.svg);
+  background-size: cover;
+  aspect-ratio: 1938.9/619.3;
+}
+.grid_1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 8%;
+}
+
+.grid_1-1-1-1-1 p {
+  text-align: center;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: small;
+  margin-top: 5%;
+}
+
+.h2_digital {
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  font-family: roboto;
+  text-transform: uppercase;
+  background-size: cover;
+}
+
+.sammen {
+  position: relative;
+  top: 24%;
+}
+
+/** Hover effekt på værktøj **/
+.visual:hover,
+.adobe:hover,
+.figma:hover,
+.final:hover,
+.pixel:hover {
+  transform: scale(1.1); /** Gør billedet større **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+}
+
+.om_mig {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
