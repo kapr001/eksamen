@@ -1,6 +1,47 @@
-h1 {
-  font-family: roboto;
-  color: white;
+/** KNAPPER I PORTFOLIO **/
+.knap1 {
+  display: inline-block; /* Gør linket til en blok, der kan styles */
+  background-color: purple; /* Grøn baggrund */
+  padding: 10px 20px; /* Indvendig afstand */
+  font-size: 16px; /* Skriftstørrelse */
+  text-align: center; /* Centrer tekst */
+  cursor: pointer; /* Hånd-markør */
+}
+
+.knap1 a {
+  text-decoration: none; /** Fjerner underscore **/
+  color: black; /** Farve **/
+  font-family: roboto; /** Font **/
+}
+
+/** TEMA OVERSKRIFT **/
+.h13 {
+  color: black; /** Sort **/
+  font-family: roboto; /** Font **/
+}
+
+/** UNDEROVERSKRIFT **/
+.h33 {
+  padding-top: 10px;
+  font-family: Alegreya Sans;
+  text-transform: uppercase;
+}
+
+/** TEKT UNDER TEMA **/
+.p3 {
+  font-family: lato; /** Font **/
+  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
+  line-height: 1.6; /** Linje højde **/
+  padding-bottom: 10px; /** Afstand til bunden **/
+}
+
+/* KNAP 1 HOVER EFFEKT */
+.knap1:hover {
+  background-color: lavender; /* Mørkere grøn ved hover */
+  font-weight: bold; /** Fed **/
+  transform: scale(1.05); /** Zoomer ind  **/
+  /** Chatten **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
 }
 
 .typewriter {
@@ -74,6 +115,11 @@ h1 {
   padding-bottom: 5%; /** Afstand bund **/
 }
 
+/** MENU UNDER HERO **/
+.grid_menu {
+  text-align: center; /** I midten **/
+}
+
 /** Baggrundsmark **/
 .bølge {
   background-image: url(img/bagg.svg); /** Baggrundsbillede **/
@@ -81,15 +127,14 @@ h1 {
   aspect-ratio: 1938.9/619.3; /** Aspect ratio **/
 }
 
-/** Billede i 1 og 3 **/
-.bølge img {
-  width: 61%; /** Størrelse **/
-  position: relative; /** Relativ **/
-  left: 8%; /** Venstre **/
-  top: 24%; /** Højre **/
+/** Baggrundsmark 2 **/
+.bølge1 {
+  background-image: url(img/bagg.svg);
+  background-size: cover; /** Baggrundsstørelse **/
+  aspect-ratio: 1938.9/619.3; /** Aspect ratio **/
 }
 
-/** Grid 1 og 3 **/
+/** GRID FOR ALLE BILLEDERNE **/
 .grid_1-1 {
   display: grid; /** Tekst og billede på række **/
   grid-template-columns: 1fr 1fr; /** 2 rækker **/
@@ -99,35 +144,94 @@ h1 {
 /** TEMA 1 **/
 .tema1 {
   padding: 20%; /** Mellemrum **/
-  position: relative; /** Relativ **/
+  position: relative; /** Forbliver + justering **/
   left: 10%; /** Venstre **/
   top: -6%; /** Top **/
 }
 
 /** TEMA 1 BILLEDE **/
-.tv1 {
-  width: 110%; /** Størrelse på billede **/
-  position: relative; /** Relativ **/
-  left: -3%; /** Venstre **/
-  top: -9%; /** Top **/
-  background-size: cover; /** Baggrundsbillede **/
+.bølge img {
+  width: 61%; /** Størrelse **/
+  position: relative; /** Forbliver + justering **/
+  left: 10%; /** Venstre **/
+  top: 24%; /** Højre **/
 }
 
 /** TEMA 2 **/
-.tema2,
-.tema4 {
-  padding-right: 30%; /** Mellemrum **/
-  position: relative; /** Relativ **/
-  left: 10%; /** Venstre **/
-  top: 10%; /** Top **/
+.tema2 {
+  padding-inline-start: 20%; /** Indrykning **/
+  position: relative; /** Forbliver + justering **/
+  left: -9%; /** Venstre **/
+  top: 12%; /** Top **/
+  padding-bottom: 20%; /** Bund **/
+  padding-right: 20%; /** Højre **/
+}
+
+/** TEMA 2 BILLEDE **/
+.mac {
+  order: -1; /** Omvendt rækkefølge **/
+  width: 69%; /** Størrelse **/
+  position: relative; /** Forbliver + justering **/
+  left: 27%; /** Venstre **/
+  top: 3%; /** Top **/
 }
 
 /** TEMA 3 **/
 .tema3 {
-  padding: 20%;
-  position: relative;
-  left: 10%;
-  top: -6%;
+  padding: 20%; /** Mellemrum om **/
+  position: relative; /** Forbliver + justering **/
+  left: 10%; /** Venstre **/
+  top: -6%; /** Top **/
+}
+
+/** TEMA 3 BILLEDE **/
+.karo {
+  padding-left: 1%; /** Venstre mellemrum **/
+}
+
+/** TEMA 4 **/
+.tema4 {
+  padding-inline-start: 20%;
+  position: relative; /** Forbliver + justering **/
+  left: -9%; /** Venstre **/
+  top: 12%; /** Top **/
+  padding-bottom: 20%; /** Afstan bund **/
+  padding-right: 20%; /** Aftand top **/
+}
+
+/** TEMA 4 BILLEDE **/
+.glamgrab {
+  order: -1; /** Omvendt rækkefølge **/
+  width: 79%; /** Størrelse **/
+  position: relative; /** Forbliver + justering **/
+  left: 21%; /** Venstre **/
+  top: 8%; /** Top **/
+}
+
+/** TEMA 5 **/
+.tema5 {
+  padding: 20%; /** Mellemrum om **/
+  position: relative; /** Forbliver + justering **/
+  left: 10%; /** Venstre **/
+  top: -6%; /** Højre **/
+}
+
+/** TEMA 5 BILLEDE **/
+.iphone {
+  width: 84%; /** Størrelse **/
+  position: relative; /** Forbliver + justering **/
+  left: 7%; /** Venstre **/
+  top: 24%; /** Højre **/
+}
+
+/** HOVER EFFEKT PÅ BILLEDER **/
+.glamgrab:hover,
+.mac:hover,
+.karo:hover,
+.passionportraits:hover,
+.tv1:hover {
+  transform: scale(1.05); /** Zoomer ind **/
+  transition: transform 0.3s ease; /** Tilføjer glidende overgang **/
 }
 
 @media (max-width: 900px) {
@@ -158,120 +262,6 @@ h1 {
   }
 }
 
-.h13 {
-  color: black;
-}
-
-.h33 {
-  padding-top: 10px;
-  font-family: Alegreya Sans;
-  text-transform: uppercase;
-}
-
-.p3 {
-  font-family: lato;
-  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
-  line-height: 1.6;
-  padding-bottom: 10px;
-}
-
-.knap1 {
-  display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: purple; /* Grøn baggrund */
-  padding: 10px 20px; /* Indvendig afstand */
-  font-size: 16px; /* Skriftstørrelse */
-  text-align: center; /* Centrer tekst */
-  cursor: pointer; /* Hånd-markør */
-}
-
-.knap1 a {
-  text-decoration: none;
-  color: black;
-  font-family: roboto;
-}
-
-/* Hover-effekt */
-.knap1:hover {
-  background-color: lavender; /* Mørkere grøn ved hover */
-  font-weight: bold;
-  transform: scale(1.05); /** Zoomer ind til 120% af størrelsen **/
-  /** Chatten **/
-  transition: transform 0.3s ease; /* Tilføjer en jævn overgang */
-}
-
-.karo:hover {
-  transform: scale(1.05); /** Zoomer ind til 120% af størrelsen **/
-  /** Chatten **/
-  transition: transform 0.3s ease; /* Tilføjer en jævn overgang */
-}
-
-.grid_1-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.glamgrab {
-  order: -1; /** Omvendt rækkefølge **/
-  width: 79%;
-  position: relative;
-  left: 21%;
-  top: 0%;
-  background-size: cover;
-}
-
-.mac {
-  order: -1;
-  width: 80%;
-  position: relative;
-  left: 18%;
-  top: -10%;
-  background-size: cover;
-}
-
-.glamgrab:hover,
-.mac:hover {
-  transform: scale(1.05); /** Zoomer ind til 120% af størrelsen **/
-  /** Chatten **/
-  transition: transform 0.3s ease; /* Tilføjer en jævn overgang */
-}
-
-.bølge1 {
-  background-image: url(img/bagg.svg);
-  background-size: cover;
-  aspect-ratio: 1938.9/619.3;
-}
-
-.tema4 {
-  padding-inline-start: 20%;
-  position: relative;
-  left: -9%;
-  top: 0%;
-  padding-bottom: 20%;
-}
-
-.tema5 {
-  padding: 20%;
-  position: relative;
-  left: 10%;
-  top: -6%;
-}
-
-.passionportraits {
-  width: 33%;
-  position: relative;
-  left: 26%;
-  top: 26%;
-  background-size: cover;
-}
-
-.passionportraits:hover,
-.tv1:hover {
-  transform: scale(1.05); /** Zoomer ind til 120% af størrelsen **/
-  /** Chatten **/
-  transition: transform 0.3s ease; /* Tilføjer en jævn overgang */
-}
-
 /** MOBIL ENHED **/
 @media (max-width: 600px) {
   /** TEMA 3 **/
@@ -279,6 +269,32 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px; /** Mindre gap **/
+  }
+
+  .tema1 {
+    grid-column: span 2; /** Fylder 2 kolonner **/
+    margin-left: -10%; /** Mindre afstand til venstre **/
+    margin-right: 10%; /** Mindre afstand til højre **/
+    margin-top: 25%; /** Mere plads i toppen **/
+    margin-bottom: 30%; /** Mere plads i bunden **/
+    position: relative; /** Gør container flytbar **/
+    padding: 1%; /** En lille smule mellemrum **/
+  }
+
+  .tema2 {
+    order: -1; /** Ændre rækkefølge fra desktop **/
+    grid-column: span 2;
+    padding: 1%;
+    margin-left: 10%; /** Mindre afstand til venstre **/
+    margin-right: -10%; /** Mindre afstand til højre **/
+    margin-top: -10%;
+    padding: 1%;
+  }
+
+  .mac {
+    left: 23%;
+    top: 13%;
+    background-size: cover;
   }
 
   .tema3 {
@@ -331,7 +347,7 @@ h1 {
     padding: 1%; /** En lille smule mellemrum **/
   }
 
-  .passionportraits img {
+  .iphone img {
     width: 100%;
     position: relative;
     left: 50%;

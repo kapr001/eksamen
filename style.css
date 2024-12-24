@@ -15,15 +15,6 @@ body {
 }
 
 /** Menu **/
-header {
-  display: flex;
-  text-transform: uppercase; /** Caps lock **/
-  justify-content: space-between; /** Menu højre **/
-  font-family: raleway; /** Font **/
-  max-width: 1200px; /** Sætter størrelsen **/
-  margin-inline: auto; /** Auto i midten **/
-  font-weight: 500; /** Lidt fed **/
-}
 
 .menu a {
   padding: 15px; /** Mellemrum **/
@@ -32,23 +23,50 @@ header {
   display: inline-block; /** Påkrævet for transform **/
 }
 
-.menu a:hover {
-  transform: scale(1.2); /** Zoomer ind til 120% af størrelsen **/
-  color: pink; /*' Ændrer farven til pink **/
-  /** Chatten **/
-  transition: transform 0.3s ease; /* Tilføjer en jævn overgang */
+.menu {
+  font-family: raleway; /** Font **/
+  text-transform: uppercase; /** Caps lock **/
+  display: flex; /** På linje **/
+  justify-content: space-between; /** Lige meget mellemrum **/
+  max-width: 1200px; /** Sætter størrelsen **/
+  margin-inline: auto; /** Auto i midten **/
+  padding-left: 30%; /** Mellemrum venstre **/
+  padding-right: 30%; /** Mellemrum højre **/
+  list-style: none; /** Fjerner prikker **/
+  padding-bottom: 2%; /** Mellemrum i bunden **/
+  font-weight: 500; /** Lidt fed **/
 }
 
-.menu {
-  display: flex; /** På linje **/
-  list-style: none; /** Fjerner prikker **/
+/** underlinje **/
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: black; /** Farve **/
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0; /** Får linjen under tekst **/
+  bottom: 0; /** Får linjen under tekst **/
+  width: 0; /** Får linjen under tekst **/
+  height: 2px; /** Højden på linjen **/
+  background: pink; /** Farve **/
+  transition: width 0.3s ease; /** Tiden og typen af animation **/
+}
+
+/** Får underlinje hover til at blive **/
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%; /** Underlinjen forbliver for aktive links**/
 }
 
 .logo1 {
   width: 80px; /** Sætter bredden **/
-  height: auto; /** Højden justeres automatisk **/
-  margin-left: 10%; /** Sætter logo mere til højre **/
-  margin-top: 20%;
+  display: block; /** Gør det muligt at billedet sidder midt **/
+  margin: auto; /** Centrerer billede **/
+  padding-bottom: 2%; /** Mellemrum i bunden **/
+  padding-top: 2%; /** Mellemrum i toppen **/
 }
 
 .burger {
@@ -64,6 +82,78 @@ header {
 
 .burger {
   display: none; /** Fjerner burger i desktop **/
+}
+
+/** FOOTER **/
+hr {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: grey;
+  opacity: 50%;
+}
+
+.grid_1-1-1 a {
+  text-decoration: none;
+  color: black;
+  font-family: raleway; /** Font **/
+}
+
+.grid_1-1-1 {
+  padding-left: 50%;
+  margin-bottom: 2%;
+}
+
+.footer_1:hover a,
+.footer_2:hover a,
+.footer_3:hover a {
+  color: pink;
+}
+
+.grid_1-1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 40px;
+}
+
+.grid_1-1_1 a {
+  color: black;
+}
+
+.footer_samlet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.linkedin:hover,
+.facebook:hover,
+.instagram:hover {
+  color: pink;
+}
+
+@media screen and (max-width: 1052px) {
+  .grid_1-1-1 a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .grid_1-1-1 {
+    padding-left: 30%;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .grid_1-1-1 a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .grid_1-1-1 {
+    padding-left: 20%;
+    margin-bottom: 2%;
+  }
 }
 
 @media screen and (max-width: 618px) {
@@ -112,5 +202,23 @@ header {
 
   nav.active .menu a {
     font-size: 15px; /** Skriftstørrelse **/
+  }
+
+  .grid_1-1-1 a {
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .grid_1-1-1 {
+    padding-left: 20%;
+    margin-bottom: 2%;
+  }
+
+  .grid_1-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 20px;
   }
 }

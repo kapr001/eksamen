@@ -1,0 +1,22 @@
+.wave {
+  background-image: url(img/bagg2.svg);
+  background-size: cover;
+  aspect-ratio: 1955.98/335.42;
+}
+
+.indeni {
+  position: relative;
+  top: 32%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: roboto; /** Font **/
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Alegreya Sans;
+}
