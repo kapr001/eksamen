@@ -1,3 +1,5 @@
+/** BILELDE FORMAT STØRRELSE 800x500 px **/
+
 .wave {
   background-image: url(img/bagg2.svg);
   background-size: cover;
@@ -19,4 +21,98 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: Alegreya Sans;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: Alegreya Sans;
+  font-size: 2rem;
+  padding-bottom: 2%;
+  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
+}
+
+p {
+  font-family: lato; /** Font **/
+  line-height: 1.8;
+}
+
+/** TEMA 1 **/
+/** PRÆSENTATION **/
+.grid_1-1 {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/** BRAINSTORM **/
+.grid_2-1 {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-bottom: 5%;
+}
+
+.billede2 {
+  order: -1;
+}
+
+.wave_tema {
+  padding-top: 10%;
+  background-image: url(img/bagg.svg);
+  background-size: cover;
+  aspect-ratio: 1938.9/619.3;
+  position: relative;
+  padding-bottom: 20%;
+}
+
+.iframe-video {
+  padding-top: 2%;
+  display: flex; /** Række/ kolonne **/
+  justify-content: center;
+}
+
+/** TEMA 2 **/
+/** PRÆSENTATION **/
+.tema2_grid_1-1 {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/** BRAINSTORM **/
+.tema2_grid_2-1 {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-bottom: 5%;
+}
+
+.tema2_billede2 {
+  order: -1;
+}
+
+.wave_tema2 {
+  padding-top: 10%;
+  background-image: url(img/bagg.svg);
+  background-size: cover;
+  aspect-ratio: 1938.9/619.3;
+  position: relative;
+  padding-bottom: 20%;
+}
+
+.billede_tema2:hover {
+  transform: scale(1.05); /** Zoomer ind  **/
+  /** Chatten **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+}
+
+.billede_tema2 {
+  width: 80%;
+  padding-top: 2%;
+  display: flex; /** Række/ kolonne **/
+  margin-inline: auto;
 }
