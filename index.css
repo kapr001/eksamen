@@ -120,6 +120,32 @@ h3 {
   .grid {
     padding-bottom: 15%;
   }
+
+  .om_mig {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tekstfelt {
+    grid-column: span 1;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  .overskrift_list a {
+    font-size: 0.9rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  .kategori {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -153,6 +179,36 @@ h3 {
     padding-left: 25%;
     padding-right: 25%;
     font-size: 20px;
+  }
+
+  .om_mig {
+    grid-template-columns: 1fr;
+  }
+  .tekstfelt {
+    grid-column: span 1;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+  .overskrift_list a {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  .kategori {
+    font-size: 0.9rem;
+  }
+
+  .om_mig {
+    margin-bottom: -15%;
   }
 }
 
