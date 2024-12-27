@@ -48,8 +48,42 @@
 .om_mig {
   margin-top: 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  /** CHATTEN **/
+  place-items: center; /* Kombinerer align-items og justify-items */
+}
+
+p {
+  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
+  line-height: 1.6;
+  font-family: lato; /** Font **/
+}
+.tekstfelt {
+  grid-column: span 2;
+}
+
+h1 {
+  font-family: roboto;
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
+
+h3 {
+  font-family: roboto;
+  text-transform: uppercase;
+  padding-bottom: 2%;
+  text-decoration: underline;
+}
+
+.li_h1 {
+  color: pink;
+  font-family: roboto;
+  list-style: none;
+  font-weight: bold;
+}
+.mig {
+  width: 100%;
 }
 
 @media screen and (max-width: 1087px) {
@@ -120,4 +154,67 @@
     padding-right: 25%;
     font-size: 20px;
   }
+}
+
+#menu1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Skjul alle tabs som standard */
+.tab-content {
+  display: none;
+}
+
+/* Aktivér den valgte tab med JavaScript */
+.tab-content.active {
+  display: block;
+}
+
+.overskrift_list {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  list-style: none;
+  padding-bottom: 5%;
+}
+
+h4 {
+  font-family: roboto;
+  color: pink;
+  font-weight: bold;
+}
+
+.kategori {
+  list-style: none;
+  padding-bottom: 2%;
+  font-family: lato; /** Font **/
+}
+
+/** underlinje **/
+.overskrift_list a {
+  position: relative;
+  text-decoration: none;
+  color: black; /** Farve **/
+}
+
+.overskrift_list a::after {
+  content: "";
+  position: absolute;
+  left: 0; /** Får linjen under tekst **/
+  bottom: 0; /** Får linjen under tekst **/
+  width: 0; /** Får linjen under tekst **/
+  height: 2px; /** Højden på linjen **/
+  background: pink; /** Farve **/
+  transition: width 0.3s ease; /** Tiden og typen af animation **/
+}
+
+/** Får underlinje hover til at blive **/
+.overskrift_list a:hover::after,
+.overskrift_list a.active::after {
+  width: 100%; /** Underlinjen forbliver for aktive links**/
+}
+
+.mellemrum_bund {
+  padding-bottom: 8%;
 }

@@ -1,5 +1,29 @@
 /** BILELDE FORMAT STØRRELSE 800x500 px **/
 
+.knap {
+  display: inline-block; /* Gør linket til en blok, der kan styles */
+  background-color: purple; /* Grøn baggrund */
+  padding: 10px 20px; /* Indvendig afstand */
+  font-size: 16px; /* Skriftstørrelse */
+  text-align: center; /* Centrer tekst */
+  cursor: pointer; /* Hånd-markør */
+  margin-top: 2%;
+}
+
+.knap a {
+  text-decoration: none; /** Fjerner underscore **/
+  color: black; /** Farve **/
+  font-family: roboto; /** Font **/
+}
+
+.knap:hover {
+  background-color: lavender; /* Mørkere grøn ved hover */
+  font-weight: bold; /** Fed **/
+  transform: scale(1.05); /** Zoomer ind  **/
+  /** Chatten **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+}
+
 .wave {
   background-image: url(img/bagg2.svg);
   background-size: cover;
@@ -28,12 +52,12 @@ h3 {
   font-family: Alegreya Sans;
   font-size: 2rem;
   padding-bottom: 2%;
-  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
 }
 
 p {
   font-family: lato; /** Font **/
   line-height: 1.8;
+  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
 }
 
 /** TEMA 1 **/
@@ -42,66 +66,67 @@ p {
   padding-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
+  padding-bottom: 5%;
 }
 
 /** BRAINSTORM **/
 .grid_2-1 {
-  padding-top: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding-bottom: 5%;
+  padding-top: 5%; /** Afstand til toppen **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr; /** To kolonner **/
+  gap: 20px; /** Mellemrum **/
+  padding-bottom: 5%; /** Mellemrum bund **/
 }
 
 .billede2 {
-  order: -1;
+  order: -1; /** Omvendt rækkefølge **/
 }
 
-.wave_tema {
-  padding-top: 10%;
-  background-image: url(img/bagg.svg);
-  background-size: cover;
-  aspect-ratio: 1938.9/619.3;
-  position: relative;
-  padding-bottom: 20%;
+/** Bølge **/
+.wave_tema1 {
+  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
+  background-size: cover; /** Cover **/
+  aspect-ratio: 1938.9/619.3; /** Størrelse **/
+  padding-bottom: 7%; /** Større bølge **/
+  padding-top: 2%; /** Større bølge **/
 }
 
 .iframe-video {
-  padding-top: 2%;
+  padding-top: 2%; /** Afstand top **/
   display: flex; /** Række/ kolonne **/
-  justify-content: center;
+  justify-content: center; /** Video midt **/
 }
 
 /** TEMA 2 **/
 /** PRÆSENTATION **/
 .tema2_grid_1-1 {
-  padding-top: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  padding-top: 5%; /** Afstandt **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr; /** To kolonner **/
+  gap: 10px; /** Mellemrum **/
+  padding-bottom: 5%; /** Mellemrum bund **/
 }
 
 /** BRAINSTORM **/
 .tema2_grid_2-1 {
-  padding-top: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding-bottom: 5%;
+  padding-top: 5%; /** Afstand **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr; /** To Kolonner **/
+  gap: 10px; /** Mellemrum **/
+  padding-bottom: 5%; /** Afstand bund **/
 }
 
 .tema2_billede2 {
-  order: -1;
+  order: -1; /** Omvendt rækkefølge **/
 }
 
 .wave_tema2 {
-  padding-top: 10%;
-  background-image: url(img/bagg.svg);
-  background-size: cover;
-  aspect-ratio: 1938.9/619.3;
-  position: relative;
-  padding-bottom: 20%;
+  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
+  background-size: cover; /** Cover **/
+  aspect-ratio: 1938.9/619.3; /** Størrelse **/
+  padding-bottom: 7%; /** Større bølge **/
+  padding-top: 2%; /** Større bølge **/
 }
 
 .billede_tema2:hover {
@@ -115,4 +140,56 @@ p {
   padding-top: 2%;
   display: flex; /** Række/ kolonne **/
   margin-inline: auto;
+}
+
+/** TEMA 3 **/
+/** PRÆSENTATION **/
+.tema3_grid_1-1 {
+  padding-top: 5%; /** Afstandt **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr; /** To kolonner **/
+  gap: 10px; /** Mellemrum **/
+  padding-bottom: 5%;
+}
+
+/** BRAINSTORM **/
+.tema3_grid_2-1 {
+  padding-top: 5%; /** Afstand **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr; /** To Kolonner **/
+  gap: 10px; /** Mellemrum **/
+  padding-bottom: 5%;
+}
+
+.tema3_billede2 {
+  order: -1; /** Omvendt rækkefølge **/
+}
+
+/** PROCESSEN **/
+.tema3_grid_3-1 {
+  padding-top: 5%; /** Afstand **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr; /** To Kolonner **/
+  gap: 10px; /** Mellemrum **/
+  padding-bottom: 5%;
+}
+
+/** PRÆSENTATION AF PROJEKT **/
+.tema3_grid_4-1 {
+  padding-top: 5%; /** Afstand **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr; /** To Kolonner **/
+  gap: 10px; /** Mellemrum **/
+  padding-bottom: 5%; /** Afstand bund **/
+}
+
+.tema3_billede4 {
+  order: -1; /** Omvendt rækkefølge **/
+}
+.wave_tema3 {
+  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
+  background-size: cover; /** Cover **/
+  aspect-ratio: 1938.9/619.3; /** Størrelse **/
+  padding-bottom: 7%; /** Større bølge **/
+  padding-top: 2%; /** Større bølge **/
 }

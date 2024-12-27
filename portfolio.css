@@ -271,6 +271,24 @@
     gap: 10px; /** Mindre gap **/
   }
 
+  #tema_1 img {
+    margin-bottom: -57%;
+    top: -111%;
+  }
+
+  #tema2 {
+    margin-bottom: 10%;
+  }
+
+  #tema4 img {
+    margin-bottom: 50%;
+    top: 10%;
+  }
+
+  #tema4 {
+    margin-top: -10%;
+  }
+
   .tema1 {
     grid-column: span 2; /** Fylder 2 kolonner **/
     margin-left: -10%; /** Mindre afstand til venstre **/
@@ -353,5 +371,11 @@
     left: 50%;
     top: -40%;
     background-size: cover;
+  }
+
+  .passionportraits {
+    width: 170%;
+    top: -53%;
+    left: 20%;
   }
 }
