@@ -2,7 +2,7 @@
 
 .knap {
   display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: purple; /* Grøn baggrund */
+  background-color: #eba7fe; /* Grøn baggrund */
   padding: 10px 20px; /* Indvendig afstand */
   font-size: 16px; /* Skriftstørrelse */
   text-align: center; /* Centrer tekst */
@@ -28,6 +28,21 @@
   background-image: url(img/bagg2.svg);
   background-size: cover;
   aspect-ratio: 1955.98/335.42;
+}
+
+@media screen and (max-width: 800px) {
+  .wave {
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
+
+  h3 {
+    text-align: center; /** H3 i midten **/
+  }
+
+  p {
+    margin-inline: auto; /** Sætter P i midten **/
+  }
 }
 
 .indeni {
@@ -68,6 +83,8 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding-bottom: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 /** BRAINSTORM **/
@@ -77,6 +94,8 @@ p {
   grid-template-columns: 1fr 1fr; /** To kolonner **/
   gap: 20px; /** Mellemrum **/
   padding-bottom: 5%; /** Mellemrum bund **/
+  padding-left: 1%; /** Mellemrum **/
+  padding-right: 1%; /** Mellemrum **/
 }
 
 .billede2 {
@@ -92,10 +111,49 @@ p {
   padding-top: 2%; /** Større bølge **/
 }
 
+/** RESULTAT **/
 .iframe-video {
   padding-top: 2%; /** Afstand top **/
   display: flex; /** Række/ kolonne **/
   justify-content: center; /** Video midt **/
+}
+
+.iframe-video2 {
+  display: none; /** Fjerner lille video **/
+}
+
+@media screen and (max-width: 800px) {
+  /** PRÆSENTATION **/
+  .grid_1-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  /** PROCESSEN **/
+  .grid_2-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  .billede2 {
+    order: 1; /** Omvendt rækkefølge **/
+  }
+
+  /** BØLGE **/
+  .wave_tema1 {
+    padding-top: 10%; /** Større bølge **/
+    padding-bottom: 30%; /** Større bølge **/
+  }
+
+  /** VIDEO **/
+  .iframe-video {
+    display: none; /** Fjerner stor video **/
+  }
+
+  /** LILLE VIDEO **/
+  .iframe-video2 {
+    padding-top: 2%; /** Afstand top **/
+    display: flex; /** Række/ kolonne **/
+    justify-content: center; /** Video midt **/
+  }
 }
 
 /** TEMA 2 **/
@@ -104,8 +162,10 @@ p {
   padding-top: 5%; /** Afstandt **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To kolonner **/
-  gap: 10px; /** Mellemrum **/
+  gap: 20px; /** Mellemrum **/
   padding-bottom: 5%; /** Mellemrum bund **/
+  padding-left: 1%; /** Mellemrum **/
+  padding-right: 1%; /** Mellemrum **/
 }
 
 /** BRAINSTORM **/
@@ -113,8 +173,10 @@ p {
   padding-top: 5%; /** Afstand **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To Kolonner **/
-  gap: 10px; /** Mellemrum **/
+  gap: 20px; /** Mellemrum **/
   padding-bottom: 5%; /** Afstand bund **/
+  padding-left: 1%; /** Mellemrum **/
+  padding-right: 1%; /** Mellemrum **/
 }
 
 .tema2_billede2 {
@@ -136,10 +198,32 @@ p {
 }
 
 .billede_tema2 {
-  width: 80%;
-  padding-top: 2%;
+  width: 80%; /** Billede størrelse **/
+  padding-top: 2%; /** Afstand top **/
   display: flex; /** Række/ kolonne **/
-  margin-inline: auto;
+  margin-inline: auto; /** Billede i midten **/
+}
+
+@media screen and (max-width: 800px) {
+  /** PRÆSENTATION  **/
+  .tema2_grid_1-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  /** BRAINSTORM **/
+  .tema2_grid_2-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  .tema2_billede2 {
+    order: 1; /** Rigtig rækkefølge **/
+  }
+
+  /** BØLGE **/
+  .wave_tema2 {
+    padding-top: 15%;
+    padding-bottom: 30%;
+  }
 }
 
 /** TEMA 3 **/
@@ -148,8 +232,10 @@ p {
   padding-top: 5%; /** Afstandt **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To kolonner **/
-  gap: 10px; /** Mellemrum **/
-  padding-bottom: 5%;
+  gap: 20px; /** Mellemrum **/
+  padding-bottom: 5%; /** Mellemrum bund **/
+  padding-left: 1%; /** Mellemrum **/
+  padding-right: 1%; /** Mellemrum **/
 }
 
 /** BRAINSTORM **/
@@ -157,8 +243,10 @@ p {
   padding-top: 5%; /** Afstand **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To Kolonner **/
-  gap: 10px; /** Mellemrum **/
-  padding-bottom: 5%;
+  gap: 20px; /** Mellemrum **/
+  padding-bottom: 5%; /** Mellemrum bund **/
+  padding-left: 1%; /** Mellemrum **/
+  padding-right: 1%; /** Mellemrum **/
 }
 
 .tema3_billede2 {
@@ -170,8 +258,10 @@ p {
   padding-top: 5%; /** Afstand **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To Kolonner **/
-  gap: 10px; /** Mellemrum **/
-  padding-bottom: 5%;
+  gap: 20px; /** Mellemrum **/
+  padding-bottom: 5%; /** Mellemrum bund **/
+  padding-left: 1%; /** Mellemrum **/
+  padding-right: 1%; /** Mellemrum **/
 }
 
 /** PRÆSENTATION AF PROJEKT **/
@@ -179,8 +269,10 @@ p {
   padding-top: 5%; /** Afstand **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To Kolonner **/
-  gap: 10px; /** Mellemrum **/
+  gap: 20px; /** Mellemrum **/
   padding-bottom: 5%; /** Afstand bund **/
+  padding-left: 1%; /** Mellemrum **/
+  padding-right: 1%; /** Mellemrum **/
 }
 
 .tema3_billede4 {
@@ -192,4 +284,62 @@ p {
   aspect-ratio: 1938.9/619.3; /** Størrelse **/
   padding-bottom: 7%; /** Større bølge **/
   padding-top: 2%; /** Større bølge **/
+}
+
+/** RESULTAT **/
+.billede_tema3:hover {
+  transform: scale(1.05); /** Zoomer ind  **/
+  /** Chatten **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+}
+
+.billede_tema3 {
+  padding-top: 5%; /** Mellemrum top **/
+  width: 550px; /** Billedestørrelse **/
+  display: flex; /** Række/ kolonne **/
+}
+
+.resultat1_tema3 {
+  display: flex; /** Række/ kolonne **/
+  justify-content: center; /** Video midt **/
+}
+
+/** MOBIL/TABLET **/
+@media screen and (max-width: 800px) {
+  /** PRÆSENTATION **/
+  .tema3_grid_1-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  /** BRAINSTORM **/
+  .tema3_grid_2-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  .tema3_billede2 {
+    order: 1; /** Billede i rigtig rækkefølge **/
+  }
+
+  /** PROCESSEN **/
+  .tema3_grid_3-1 {
+    grid-template-columns: 1fr;
+  }
+
+  /** PRÆSENTATION **/
+  .tema3_grid_4-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  .tema3_billede4 {
+    order: 1; /** Billede i rigtig rækkefølge **/
+  }
+
+  .wave_tema3 {
+    padding-top: 20%; /** Større bølge **/
+    padding-bottom: 35%; /** Større bølge **/
+  }
+
+  .billede_tema3 {
+    width: 400px; /** Mindre billede **/
+  }
 }

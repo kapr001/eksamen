@@ -1,9 +1,8 @@
 /** KNAPPER I PORTFOLIO **/
 .knap1 {
   display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: purple; /* Grøn baggrund */
+  background-color: #eba7fe; /* Grøn baggrund */
   padding: 10px 20px; /* Indvendig afstand */
-  font-size: 16px; /* Skriftstørrelse */
   text-align: center; /* Centrer tekst */
   cursor: pointer; /* Hånd-markør */
 }
@@ -12,6 +11,7 @@
   text-decoration: none; /** Fjerner underscore **/
   color: black; /** Farve **/
   font-family: roboto; /** Font **/
+  font-size: 0.9rem;
 }
 
 /** TEMA OVERSKRIFT **/
@@ -33,6 +33,7 @@
   max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
   line-height: 1.6; /** Linje højde **/
   padding-bottom: 10px; /** Afstand til bunden **/
+  font-size: 1rem;
 }
 
 /* KNAP 1 HOVER EFFEKT */

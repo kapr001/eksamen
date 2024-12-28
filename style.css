@@ -175,7 +175,6 @@ hr {
   }
   .burger {
     display: block; /** Gør burger-menu synlig **/
-    margin-top: 50%; /** Burgermenu længere ned **/
     margin-left: -30%; /** Burgermenu mere mod venstre **/
   }
 
@@ -212,11 +211,11 @@ hr {
 
   .grid_1-1-1 a {
     text-decoration: none;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .grid_1-1-1 {
-    padding-left: 20%;
+    padding-left: 5%;
     margin-bottom: 2%;
   }
 
@@ -224,7 +223,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 20%;
-    padding-right: 20%;
+    padding-right: 2%;
     font-size: 20px;
   }
 }
