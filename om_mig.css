@@ -1,0 +1,161 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: roboto; /** Font **/
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: roboto;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: roboto;
+  text-transform: uppercase;
+}
+
+.h2_overskrift {
+  margin-bottom: 0%;
+  text-transform: none;
+  font-style: italic;
+}
+
+.om_mig_wave,
+.galleri_serie {
+  background-image: url(img/bagg2.svg);
+  background-size: cover;
+  aspect-ratio: 1955.98/335.42;
+}
+
+.indeni {
+  position: relative;
+  top: 40%;
+}
+
+.overskrift {
+  background-image: url(img/bagg.svg);
+  background-size: cover;
+  aspect-ratio: 1938.9/619.3;
+  position: relative;
+}
+
+.grid_om_mig {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 20%;
+  padding-right: 20%;
+  gap: 8%;
+  position: relative;
+}
+
+.grid_1-1-1-1-1 p {
+  text-align: center;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: small;
+}
+
+.digitale_supplies {
+  top: -5%;
+  position: relative;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+/** KONTAKTFORMULAR **/
+.kontakt_mig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.container {
+  order: -1;
+}
+
+/** KONTAKFORMULAR FRA W3 SCHOOLS **/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  display: inline-block; /* Gør linket til en blok, der kan styles */
+  background-color: #eba7fe; /* Grøn baggrund */
+  padding: 10px 40px; /* Indvendig afstand */
+  text-align: center; /* Centrer tekst */
+  cursor: pointer; /* Hånd-markør */
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: lavender; /* Mørkere grøn ved hover */
+  font-weight: bold; /** Fed **/
+  transform: scale(1.05); /** Zoomer ind  **/
+  /** Chatten **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.om_mig_billede {
+  order: -1;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 5%;
+}
+
+/** PROCENTBAR FRA GEEKSFORGEEKS.ORG **/
+/** Med egen styling **/
+
+.udenom {
+  margin-top: 2%;
+  background-color: #eba7fe;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+
+.container_procent {
+  width: 20%;
+  border-radius: 15px;
+}
+
+.skill {
+  background-color: pink;
+  color: black;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.html {
+  width: 80%;
+}
