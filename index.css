@@ -59,6 +59,41 @@ p {
   line-height: 1.6;
   font-family: lato; /** Font **/
 }
+
+.knap {
+  display: inline-block; /* Gør linket til en blok, der kan styles */
+  background-color: #eba7fe; /* Grøn baggrund */
+  padding: 10px 20px; /* Indvendig afstand */
+  text-align: center; /* Centrer tekst */
+  cursor: pointer; /* Hånd-markør */
+}
+
+.knap a {
+  text-decoration: none; /** Fjerner underscore **/
+  color: black; /** Farve **/
+  font-family: roboto; /** Font **/
+  font-size: 0.9rem;
+}
+
+.knap:hover {
+  background-color: lavender; /* Mørkere grøn ved hover */
+  font-weight: bold; /** Fed **/
+  transform: scale(1.05); /** Zoomer ind  **/
+  /** Chatten **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+}
+
+.knappen {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.knap_mig {
+  grid-column: 2;
+  justify-self: center;
+  padding-top: 2%;
+}
+
 .tekstfelt {
   grid-column: span 2;
 }
@@ -84,6 +119,14 @@ h3 {
 }
 .mig {
   width: 100%;
+}
+
+#tab2 {
+  text-align: center;
+}
+
+#tab3 {
+  text-align: right;
 }
 
 @media screen and (max-width: 1087px) {
@@ -215,6 +258,10 @@ h3 {
 #menu1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+#menu1 {
+  justify-content: center;
 }
 
 /* Skjul alle tabs som standard */

@@ -1,3 +1,9 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -16,12 +22,55 @@ h3 {
   margin-bottom: 2%;
   font-family: roboto;
   text-transform: uppercase;
+  font-size: 1.8rem;
+  padding-top: 2%;
 }
 
 .h2_overskrift {
   margin-bottom: 0%;
   text-transform: none;
   font-style: italic;
+}
+
+.h2_ommig {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 0%;
+}
+
+.h2_ommig_height {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 0%;
+  padding-top: 2%;
+}
+
+.h2_ommig_height1 {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: -2%;
+  padding-top: 2%;
+}
+p {
+  line-height: 1.6;
+  font-family: lato; /** Font **/
+}
+
+.p_height {
+  padding-top: 2%;
+}
+
+.h3_cv {
+  padding-top: 2%;
+  text-align: left;
+  margin-bottom: 0%;
+  font-size: 1rem;
+}
+
+.h3_cv1 {
+  text-align: left;
+  margin-bottom: 0%;
+  font-size: 1rem;
 }
 
 .om_mig_wave,
@@ -123,13 +172,46 @@ input[type="submit"]:hover {
 
 .om_mig_billede {
   order: -1;
+  margin: auto;
 }
 
-.section2 {
+.grid1,
+.grid3 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
   padding-bottom: 5%;
+}
+
+.one1,
+.one2 {
+  margin: auto;
+}
+
+.two1 img,
+.two2 img {
+  width: 100%;
+  margin: auto;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding-bottom: 10%;
+}
+
+.two2 {
+  order: -1;
+}
+
+.om_mig {
+  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
+  margin: auto; /** I midten **/
+}
+
+.h1_ommig {
+  text-align: left;
 }
 
 /** PROCENTBAR FRA GEEKSFORGEEKS.ORG **/
@@ -139,16 +221,17 @@ input[type="submit"]:hover {
   margin-top: 2%;
   background-color: #eba7fe;
   border-radius: 15px;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 
 .container_procent {
   width: 20%;
   border-radius: 15px;
+  font-family: lato;
 }
 
 .skill {
-  background-color: pink;
+  background-color: #f6c2cb;
   color: black;
   padding: 1%;
   text-align: right;
@@ -158,4 +241,60 @@ input[type="submit"]:hover {
 
 .html {
   width: 80%;
+}
+
+.galleri_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.galleri_1 {
+  grid-column: 1/2;
+}
+
+.galleri_2 {
+  grid-column: 2/3;
+}
+
+.galleri_3 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.galleri_4 {
+  grid-column: span 2;
+}
+
+.galleri_5 {
+  grid-column: span 4;
+}
+
+.galleri_grid img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+@media (max-width: 600px) {
+  .galleri_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .galleri_1 {
+    grid-column: 1 / span 2; /** Start 1 = strækker 2 **/
+  }
+
+  .billede_4 {
+    grid-column: 1 / span 2; /** Start 1 = strækker 2 **/
+  }
+
+  .galleri_5 {
+    grid-column: 1 / span 2; /** Start 1 = strækker 2 **/
+  }
+
+  .galleri_3 {
+    grid-row: 4; /** Stort billede til sidst **/
+  }
 }
