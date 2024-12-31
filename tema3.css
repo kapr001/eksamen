@@ -2,7 +2,7 @@
 
 .knap {
   display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: #eba7fe; /* Grøn baggrund */
+  background-color: var(--knap-color); /* Grøn baggrund */
   padding: 10px 20px; /* Indvendig afstand */
   font-size: 16px; /* Skriftstørrelse */
   text-align: center; /* Centrer tekst */
@@ -12,18 +12,22 @@
 
 .knap a {
   text-decoration: none; /** Fjerner underscore **/
-  color: black; /** Farve **/
+  color: var(--tekstknap-color); /** Farve **/
   font-family: roboto; /** Font **/
 }
 
 .knap:hover {
-  background-color: lavender; /* Mørkere grøn ved hover */
+  color: black;
+  background-color: var(--hover-color); /* Mørkere grøn ved hover */
   font-weight: bold; /** Fed **/
   transform: scale(1.05); /** Zoomer ind  **/
   /** Chatten **/
   transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
 }
 
+.knap:hover a {
+  color: var(--hover-tekst);
+}
 .wave {
   background-image: url(img/bagg2.svg);
   background-size: cover;
@@ -189,6 +193,7 @@ p {
   aspect-ratio: 1938.9/619.3; /** Størrelse **/
   padding-bottom: 7%; /** Større bølge **/
   padding-top: 2%; /** Større bølge **/
+  margin-inline: auto;
 }
 
 .billede_tema2:hover {

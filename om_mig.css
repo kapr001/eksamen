@@ -75,14 +75,18 @@ p {
 
 .om_mig_wave,
 .galleri_serie {
+  width: 100%;
+  aspect-ratio: 1955.98 / 335.42;
   background-image: url(img/bagg2.svg);
+
+  /** CHATTEN - FOR AT DET ER DET SAMME I CHROME! **/
   background-size: cover;
-  aspect-ratio: 1955.98/335.42;
+  background-repeat: no-repeat;
 }
 
 .indeni {
   position: relative;
-  top: 40%;
+  top: 30%;
 }
 
 .overskrift {
@@ -90,6 +94,22 @@ p {
   background-size: cover;
   aspect-ratio: 1938.9/619.3;
   position: relative;
+}
+
+.video {
+  width: 100%; /** Videoen fylder 100% af dens overordnede element **/
+  max-width: 100%; /** Begrænser bredden, hvis den er i et smalt layout **/
+  margin: 0 auto; /** Centrerer video **/
+  margin-top: 10px; /** Afstand til bunden **/
+  margin-bottom: 20px; /** Afstand til toppen **/
+  padding-left: 50px; /** Mellemrum til venstre **/
+  padding-right: 50px; /** Mellemrum til højre **/
+}
+
+.video video {
+  width: 100%; /** Fylder hele videoens bredde **/
+  height: 450px; /** Fast højde **/
+  object-fit: cover; /** Tilpasser videoen, så den beskæres **/
 }
 
 .grid_om_mig {
@@ -120,10 +140,13 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  padding-bottom: 10%;
+  margin: auto;
 }
 
-.container {
-  order: -1;
+.mig_billede img {
+  width: 80%;
+  margin: auto;
 }
 
 /** KONTAKFORMULAR FRA W3 SCHOOLS **/
@@ -142,11 +165,12 @@ textarea {
 
 input[type="submit"] {
   display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: #eba7fe; /* Grøn baggrund */
+  background-color: var(--knap-color); /* Grøn baggrund */
   padding: 10px 40px; /* Indvendig afstand */
   text-align: center; /* Centrer tekst */
   cursor: pointer; /* Hånd-markør */
   border: none;
+  color: var(--hover-color);
 }
 
 input[type="submit"]:hover {
@@ -155,6 +179,7 @@ input[type="submit"]:hover {
   transform: scale(1.05); /** Zoomer ind  **/
   /** Chatten **/
   transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+  color: var(--hover-tekst);
 }
 
 .container {
@@ -214,12 +239,18 @@ input[type="submit"]:hover {
   text-align: left;
 }
 
+.two1,
+.two2,
+.two3 {
+  margin: auto;
+}
+
 /** PROCENTBAR FRA GEEKSFORGEEKS.ORG **/
 /** Med egen styling **/
 
 .udenom {
   margin-top: 2%;
-  background-color: #eba7fe;
+  background-color: #66476f;
   border-radius: 15px;
   margin-bottom: 8%;
 }
@@ -231,7 +262,7 @@ input[type="submit"]:hover {
 }
 
 .skill {
-  background-color: #f6c2cb;
+  background-color: var(--pink-color);
   color: black;
   padding: 1%;
   text-align: right;
@@ -276,6 +307,66 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 600px) {
+  /** VIDEO **/
+  .video video {
+    width: 100%; /** Fylder hele videoens bredde **/
+    height: 100%; /** Fylder det hele **/
+  }
+
+  .video {
+    padding-left: 0px; /** Intet padding **/
+    padding-right: 0px; /** Intet padding **/
+  }
+
+  /** BØLGE **/
+  .om_mig_wave {
+    padding-top: 8%; /** Padding = større bølge **/
+    padding-bottom: 15%; /** Padding = Større bølge **/
+  }
+
+  .galleri_serie {
+    padding-top: 5%;
+    padding-bottom: 15%;
+  }
+
+  /** MIT KREATIVE UNIVERS **/
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+
+  .om_mig_billede {
+    order: 1;
+    padding-bottom: 20%;
+  }
+
+  /** KOMPETENCER & ERFARING **/
+  .grid1,
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 20%; /** Mellemrum tilføjet **/
+  }
+
+  /** UDDANNELSE **/
+  .grid2 {
+    grid-template-columns: 1fr;
+    padding-bottom: 20%; /** Mellemrum tilføjet **/
+  }
+
+  .two2 {
+    order: 1;
+  }
+
+  /** KONTAKT MIG **/
+  .kontakt_mig {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    order: -1;
+  }
+
+  /** GALLERI **/
   .galleri_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

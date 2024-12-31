@@ -1,3 +1,13 @@
+/** Farvepalette **/
+:root {
+  --pink-color: #f6c2cb;
+  --lilla-color: #66476f;
+  --knap-color: #66476f;
+  --tekstknap-color: #ffff;
+  --hover-color: #e6e6fa;
+  --hover-tekst: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +67,7 @@ body {
   bottom: 0; /** Får linjen under tekst **/
   width: 0; /** Får linjen under tekst **/
   height: 2px; /** Højden på linjen **/
-  background: pink; /** Farve **/
+  background: var(--knap-color); /** Farve **/
   transition: width 0.3s ease; /** Tiden og typen af animation **/
 }
 
@@ -112,7 +122,7 @@ hr {
 .footer_1:hover a,
 .footer_2:hover a,
 .footer_3:hover a {
-  color: pink;
+  color: var(--lilla-color);
 }
 
 .grid_1-1_1 {
@@ -135,7 +145,7 @@ hr {
 .linkedin:hover,
 .facebook:hover,
 .instagram:hover {
-  color: pink;
+  color: var(--lilla-color);
 }
 
 @media screen and (max-width: 1052px) {
@@ -161,21 +171,37 @@ hr {
     margin-bottom: 2%;
   }
 }
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between; /** Menu højre **/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /** Skygge **/
+    margin-inline: auto; /** Auto i midten **/
+  }
 
-@media screen and (max-width: 618px) {
+  .logo_2 {
+    display: inline; /** Logo_2 synlig i mobil **/
+    width: 50px; /** px gør at billede ikke justeres **/
+    padding-left: 8%; /** Mellemrum venstre **/
+    padding-top: 2%; /** Mellemrum til top **/
+  }
+
+  .logo1 {
+    display: none; /** Logo_1 forsvinder i mobil **/
+  }
+
   .menu {
-    display: none;
-    margin-top: -4%; /** Sætter menuen tætter på burger **/
+    display: none; /** Menu vises **/
+    margin-top: -50px; /** Samme afstand til top = px **/
+    padding-left: 0%; /** Mellemrum venstre **/
+    padding-right: 0%; /** Mellemrum højre **/
   }
-  .menu a:hover {
-    transform: none; /** Zoomer ind til 120% af størrelsen **/
-    color: pink; /*' Ændrer farven til pink **/
-    /** Chatten **/
-    transition: transform 0.3s ease; /* Tilføjer en jævn overgang */
-  }
+
   .burger {
     display: block; /** Gør burger-menu synlig **/
-    margin-left: -30%; /** Burgermenu mere mod venstre **/
+    margin-left: -20%; /** Mellemrum venstre **/
+    margin-top: 60%; /** Mellemrum til top **/
+    padding-bottom: 60%;
   }
 
   .burger.active .line:nth-child(1) {
@@ -191,22 +217,29 @@ hr {
     transform: rotate(-45deg) translate(5px, -5px); /** Laver kryds centralt **/
     transition: 0.2s linear; /** Når kryds = glidende **/
   }
+
   nav.active .menu {
     display: block; /** Menu bliver synlig **/
-    background-color: #ffffff; /** Baggrundsfarve **/
     position: absolute; /** Menu kommer ned **/
-    top: 94px; /** Kommer under logo **/
-    left: 0%; /** Længere til venstre liste **/
+    background-color: #ffffff; /** Baggrundsfarve **/
+    top: 94px; /** Menu kommer rigtig ned **/
+    left: 0; /** Fylder det hele **/
     width: 100%; /** Menu fylder hele skærm **/
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /** Skygge **/
+    z-index: 10; /** Rykker menu frem foran alt**/
   }
 
   nav.active .menu li {
-    margin: 5px; /** Mellemrum mellem links **/
+    margin: 5px 5px; /** Mellemrum mellem links **/
   }
 
   nav.active .menu a {
     font-size: 15px; /** Skriftstørrelse **/
+  }
+
+  .menu a:hover::after,
+  .menu a.active::after {
+    width: 0%; /** Underlinjen forsvinder **/
   }
 
   .grid_1-1-1 a {

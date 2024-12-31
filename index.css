@@ -62,7 +62,7 @@ p {
 
 .knap {
   display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: #eba7fe; /* Grøn baggrund */
+  background-color: var(--knap-color); /* Grøn baggrund */
   padding: 10px 20px; /* Indvendig afstand */
   text-align: center; /* Centrer tekst */
   cursor: pointer; /* Hånd-markør */
@@ -70,13 +70,13 @@ p {
 
 .knap a {
   text-decoration: none; /** Fjerner underscore **/
-  color: black; /** Farve **/
+  color: var(--tekstknap-color);
   font-family: roboto; /** Font **/
   font-size: 0.9rem;
 }
 
 .knap:hover {
-  background-color: lavender; /* Mørkere grøn ved hover */
+  background-color: var(--hover-color); /* Mørkere grøn ved hover */
   font-weight: bold; /** Fed **/
   transform: scale(1.05); /** Zoomer ind  **/
   /** Chatten **/
@@ -112,7 +112,7 @@ h3 {
 }
 
 .li_h1 {
-  color: pink;
+  color: var(--pink-color);
   font-family: roboto;
   list-style: none;
   font-weight: bold;
@@ -253,6 +253,12 @@ h3 {
   .om_mig {
     margin-bottom: -15%;
   }
+
+  .knappen {
+    display: flex;
+    padding-top: 15%;
+    justify-content: center;
+  }
 }
 
 #menu1 {
@@ -284,7 +290,7 @@ h3 {
 
 h4 {
   font-family: roboto;
-  color: pink;
+  color: var(--lilla-color);
   font-weight: bold;
 }
 
@@ -308,7 +314,7 @@ h4 {
   bottom: 0; /** Får linjen under tekst **/
   width: 0; /** Får linjen under tekst **/
   height: 2px; /** Højden på linjen **/
-  background: pink; /** Farve **/
+  background: var(--lilla-color); /** Farve **/
   transition: width 0.3s ease; /** Tiden og typen af animation **/
 }
 

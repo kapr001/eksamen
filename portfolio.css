@@ -1,7 +1,7 @@
 /** KNAPPER I PORTFOLIO **/
 .knap1 {
   display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: #eba7fe; /* Grøn baggrund */
+  background-color: var(--knap-color); /* Grøn baggrund */
   padding: 10px 20px; /* Indvendig afstand */
   text-align: center; /* Centrer tekst */
   cursor: pointer; /* Hånd-markør */
@@ -9,7 +9,7 @@
 
 .knap1 a {
   text-decoration: none; /** Fjerner underscore **/
-  color: black; /** Farve **/
+  color: var(--tekstknap-color); /** Farve **/
   font-family: roboto; /** Font **/
   font-size: 0.9rem;
 }
@@ -36,73 +36,26 @@
   font-size: 1rem;
 }
 
+p {
+  font-family: lato;
+}
+
 /* KNAP 1 HOVER EFFEKT */
 .knap1:hover {
-  background-color: lavender; /* Mørkere grøn ved hover */
+  background-color: var(--hover-color); /* Mørkere grøn ved hover */
   font-weight: bold; /** Fed **/
   transform: scale(1.05); /** Zoomer ind  **/
   /** Chatten **/
   transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
 }
 
-.typewriter {
-  display: inline-block; /** Blink carret og typing forbliver ved tekst **/
+/** skifter farve ved hover **/
+.knap1:hover a {
+  color: var(--hover-tekst); /** Ændrer farven til sort ved hover **/
 }
 
-.tekst {
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: bold;
-  width: 100%;
-  color: purple;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 5px solid;
-  animation: typing 7s steps(12, end), blink-caret 0.75s infinite; /** 12 er antal bogstaver **/
-  animation-iteration-count: infinite; /* Gentager animationen */
-}
-
-/** Får streg til at blinke **/
-@keyframes blink-caret {
-  50% {
-    /** 50% så den er usynlig **/
-    border-color: transparent;
-  }
-}
-
-/* The typing effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  40% {
-    width: 100%; /* Fuldfør teksten */
-  }
-  70% {
-    width: 100%; /* Hold teksten færdigskrevet */
-  }
-  100% {
-    width: 0; /* Slet teksten */
-  }
-}
-
-.typewriter {
-  position: absolute;
-  bottom: 50%;
-  right: 38%;
-  padding-left: 20px;
-  padding-right: 5px;
-  text-align: right;
-  font-family: roboto;
-}
-.velkommen {
-  position: absolute;
-  bottom: 65%;
-  color: white;
-  right: 30%;
-  text-align: right;
-  font-family: roboto;
-  font-size: 4rem;
+.grid_menu {
+  padding-top: 2%;
 }
 
 /** Tekstfelt i portfolio **/
@@ -238,7 +191,7 @@
 @media (max-width: 900px) {
   .h13 {
     color: black;
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
 
   .tema3 {
@@ -264,7 +217,7 @@
 }
 
 /** MOBIL ENHED **/
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   /** TEMA 3 **/
   .grid_1-1 {
     display: grid;
@@ -374,9 +327,39 @@
     background-size: cover;
   }
 
-  .passionportraits {
+  .passionportraits img {
     width: 170%;
     top: -53%;
     left: 20%;
+  }
+
+  /** KNAPPER I PORTFOLIO **/
+
+  .grid_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #knap1 {
+    grid-column: span 2;
+  }
+
+  #knap2 {
+    grid-column: span 2;
+  }
+
+  #knap3 {
+    grid-column: span 2;
+  }
+
+  #knap4 {
+    grid-column: 2 / span 2;
+  }
+
+  #knap5 {
+    grid-column: span 2;
   }
 }
