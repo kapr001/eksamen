@@ -18,6 +18,10 @@ img {
   height: auto; /* Bevarer billedets proportioner */
 }
 
+html {
+  scroll-behavior: smooth; /** Smooth scrolling **/
+}
+
 main {
   max-width: 1200px;
   margin-inline: auto;
@@ -175,7 +179,7 @@ hr {
   header {
     display: flex;
     justify-content: space-between; /** Menu højre **/
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /** Skygge **/
+
     margin-inline: auto; /** Auto i midten **/
   }
 
@@ -259,4 +263,43 @@ hr {
     padding-right: 2%;
     font-size: 20px;
   }
+}
+
+/** BACK TO TOP KNAP **/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--knap-color);
+  color: white; /** Pil **/
+  cursor: pointer; /** Pege **/
+  padding: 10px 30px; /* Indvendig afstand */
+}
+
+#myBtn:hover {
+  background-color: var(--hover-color);
+}
+
+.arrow {
+  border: solid white; /** Solid for at vise **/
+  border-width: 0 3px 3px 0; /** Form **/
+  display: inline-block; /** Gør V **/
+  padding: 3px; /** Vises **/
+}
+
+.up {
+  transform: rotate(-135deg); /** Roterer **/
+  -webkit-transform: rotate(-135deg);
+}
+
+#myBtn:hover .arrow {
+  border: solid black; /** Solid for at vise **/
+  border-width: 0 3px 3px 0; /** Form **/
+  display: inline-block; /** Gør V **/
+  padding: 3px; /** Vises **/
 }

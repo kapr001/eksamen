@@ -83,6 +83,10 @@ p {
   transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
 }
 
+.knap:hover a {
+  color: black;
+}
+
 .knappen {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -326,4 +330,9 @@ h4 {
 
 .mellemrum_bund {
   padding-bottom: 8%;
+}
+
+.grid a {
+  text-decoration: none;
+  color: black;
 }

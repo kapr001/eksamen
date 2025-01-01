@@ -212,36 +212,57 @@
         </div>
 
 
-        <div class="overskrift">
+        <div id="tools" class="overskrift">
             <div class="digitale_supplies">
                 <h2 class="h2_overskrift">Hvordan jeg bruger</h2>
-                <h1>mine digitale værktøjer</h1>
+                <h1 class="h1_overskrift">mine digitale værktøjer</h1>
 
 
                 <div class="grid_om_mig">
                     <div class="adobe">
                         <img src="img/adobe.webp" alt="Adobe">
-                        <p>Adobe Creative Cloud</p>
+                        <h3 class="h3_tools">Adobe CC</h3>
+                        <p>Jeg bruger Adobe til grafisk design, billedredigering, videoproduktion
+                            og webdesign. Programmer som
+                            Photoshop, Illustrator og Premiere Pro hjælper mig med at skabe visuelt indhold og
+                            kreative projekter.</p>
                     </div>
 
                     <div class="visual">
                         <img src="img/visual.webp" alt="Visual Studio Code">
-                        <p>Visual Studio Code</p>
+                        <h3 class="h3_tools">Visual Studio Code</h3>
+                        <p>Jeg bruger Visual til at skrive og redigere HTML, CSS og JavaScript til
+                            webudvikling. Det er et effektivt
+                            værktøj, der gør det nemt at strukturere hjemmesider, style dem og tilføje interaktive
+                            funktioner.</p>
                     </div>
 
                     <div class="figma">
                         <img src="img/figma.webp" alt="Figma">
-                        <p>Figma</p>
+                        <h3 class="h3_tools">Figma</h3>
+                        <p>Jeg bruger Figma til at designe brugergrænseflader og prototyper til hjemmesider og apps. Det
+                            er et effektivt værktøj,
+                            der gør det nemt at samarbejde, lave responsive designs og visualisere ideer fra start til
+                            slut.</p>
                     </div>
 
                     <div class="final">
                         <img src="img/final.webp" alt="Final Cut Pro">
-                        <p>Final Cut Pro</p>
+                        <h3 class="h3_tools">Final Cut Pro</h3>
+                        <p>Jeg bruger Final Cut Pro til videoredigering, hvor jeg klipper, justerer og finpudser
+                            videoer. Det er et kraftfuldt
+                            værktøj, der gør det nemt at skabe professionelle videoer med overgange, effekter og
+                            farvekorrektion.</p>
                     </div>
 
                     <div class="pixel">
                         <img src="img/pixelmator.webp" alt="Pixelmator">
-                        <p>Pixelmator</p>
+                        <h3 class="h3_tools">Pixelmator</h3>
+                        <p>Jeg bruger Pixelmator til billedredigering og grafisk design. Det er et intuitivt værktøj,
+                            der
+                            gør det nemt at
+                            redigere billeder, lave illustrationer og skabe visuelt indhold med professionelle
+                            resultater. </p>
                     </div>
                 </div>
             </div>
@@ -254,7 +275,7 @@
             </div>
 
             <div class="container">
-                <form action="action_page.php">
+                <form action="action_page.php" method="POST">
 
                     <label for="fname">Fornavn</label>
                     <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
@@ -288,6 +309,7 @@
 
         </div>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
     </main>
     <footer>
         <hr>
@@ -321,6 +343,9 @@
                 </a>
             </div>
         </div>
+
+
+
     </footer>
     <script src="menu.js"></script>
 </body>

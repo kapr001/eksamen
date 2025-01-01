@@ -13,22 +13,7 @@ function menuClick() {
   nav.classList.remove("active");
 }
 
-document.querySelectorAll("#menu1 a").forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault(); // Forhindrer scroll
-    const tabName = this.getAttribute("data-tab");
-
-    // Fjern "active" fra alle tabs
-    document.querySelectorAll(".tab-content").forEach((tab) => tab.classList.remove("active"));
-
-    // Aktivér den valgte tab
-    document.querySelector(`.tab-content[data-tab="${tabName}"]`).classList.add("active");
-
-    // Tilføj "active" til det korrekte tab-indhold
-    tabs[index].classList.add("active");
-  });
-});
-
+// CHAT GBT HAR HJULPET; KOMPETENCER, UDDANNELSE & ERFARING
 // Find alle links og tab-indhold
 const links = document.querySelectorAll("#menu1 a");
 const tabs = document.querySelectorAll(".tab-content");
@@ -38,16 +23,39 @@ links.forEach((link, index) => {
   link.addEventListener("click", (e) => {
     e.preventDefault(); // Forhindrer scroll
 
-    // Fjern "active" fra alle links
+    // Fjern underscore efter klik
     links.forEach((link) => link.classList.remove("active"));
 
-    // Tilføj "active" til det link, der blev klikket
+    // Tilføj underscore til det link, der blev klikket
     link.classList.add("active");
 
-    // Fjern "active" fra alle tabs
+    // Fjern tekst fra alle tabs
     tabs.forEach((tab) => tab.classList.remove("active"));
 
     // Tilføj "active" til det korrekte tab-indhold
     tabs[index].classList.add("active");
   });
 });
+
+// BACK TO TOP KNAP MED W3 SCHOOLS
+// Knappen hentes
+let mybutton = document.getElementById("myBtn");
+
+// Hvorår knap hentes
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// Skroller til top v klik
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

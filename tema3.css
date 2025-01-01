@@ -203,7 +203,7 @@ p {
 }
 
 .billede_tema2 {
-  width: 80%; /** Billede størrelse **/
+  width: 550px;
   padding-top: 2%; /** Afstand top **/
   display: flex; /** Række/ kolonne **/
   margin-inline: auto; /** Billede i midten **/
@@ -222,6 +222,10 @@ p {
 
   .tema2_billede2 {
     order: 1; /** Rigtig rækkefølge **/
+  }
+
+  .billede_tema2 {
+    width: 350px;
   }
 
   /** BØLGE **/
@@ -345,6 +349,31 @@ p {
   }
 
   .billede_tema3 {
-    width: 400px; /** Mindre billede **/
+    width: 350px; /** Mindre billede **/
   }
+}
+
+/* Container for divider CHATGPT*/
+.divider {
+  display: flex; /* vandret */
+  align-items: center; /* Centrer */
+  justify-content: center; /* Centrer stjernerne i midten */
+  position: relative; /* Gør det muligt at bruge (::before og ::after) */
+  margin: 20px 0; /* Tilføjer afstand */
+}
+
+/* Før og efter stjernerne */
+.divider::before,
+.divider::after {
+  content: ""; /** Tomt indhold **/
+  flex: 1; /** Linjerne fylde begge sider af stjernerne **/
+  border-bottom: 1px solid var(--knap-color); /** Linjen **/
+  margin: 0 10px; /** Afstand mellem * og - **/
+}
+
+/* Stil for stjernerne i midten */
+.divider span {
+  font-size: 20px; /** Størrelse **/
+  font-weight: bold; /** Fede **/
+  color: var(--knap-color); /** Farve **/
 }
