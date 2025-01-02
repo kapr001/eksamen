@@ -246,6 +246,11 @@ label {
   grid-template-columns: 1fr 2fr;
   gap: 30px;
   padding-bottom: 10%;
+  padding-left: 20px;
+}
+
+.grid3 {
+  padding-left: 20px;
 }
 
 .two2 {

@@ -44,19 +44,28 @@ body {
 }
 
 .menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-family: raleway; /** Font **/
   text-transform: uppercase; /** Caps lock **/
-  display: flex; /** På linje **/
+  text-align: center;
   justify-content: space-between; /** Lige meget mellemrum **/
   max-width: 1200px; /** Sætter størrelsen **/
   margin-inline: auto; /** Auto i midten **/
-  padding-left: 30%; /** Mellemrum venstre **/
-  padding-right: 30%; /** Mellemrum højre **/
+  padding-left: 15%; /** Mellemrum venstre **/
+  padding-right: 15%; /** Mellemrum højre **/
   list-style: none; /** Fjerner prikker **/
   padding-bottom: 2%; /** Mellemrum i bunden **/
   font-weight: 500; /** Lidt fed **/
 }
 
+@media (max-width: 870px) {
+  .menu {
+    font-size: 0.7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 /** underlinje **/
 .menu a {
   position: relative;
