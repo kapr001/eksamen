@@ -313,6 +313,34 @@ p {
   justify-content: center; /** Video midt **/
 }
 
+/** TEMA 4 **/
+.wave_tema4 {
+  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
+  background-size: cover; /** Cover **/
+  aspect-ratio: 1938.9/619.3; /** Størrelse **/
+  padding-bottom: 15%; /** Større bølge **/
+  padding-top: 8%; /** Større bølge **/
+}
+
+.wave_tema4v2 {
+  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
+  background-size: cover; /** Cover **/
+  aspect-ratio: 1938.9/619.3; /** Størrelse **/
+  padding-bottom: 15%; /** Større bølge **/
+  padding-top: 8%; /** Større bølge **/
+}
+
+@media screen and (max-width: 800px) {
+  .wave_tema4v2 {
+    padding-bottom: 35%; /** Større bølge **/
+    padding-top: 25%; /** Større bølge **/
+  }
+
+  .wave_tema4 {
+    padding-bottom: 35%; /** Større bølge **/
+    padding-top: 25%; /** Større bølge **/
+  }
+}
 /** MOBIL/TABLET **/
 @media screen and (max-width: 800px) {
   /** PRÆSENTATION **/
