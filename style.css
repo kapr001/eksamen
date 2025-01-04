@@ -255,6 +255,7 @@ hr {
     width: 0%; /** Underlinjen forsvinder **/
   }
 
+  /** FOOTER **/
   .grid_1-1-1 a {
     text-decoration: none;
     font-size: 11px;
@@ -267,10 +268,16 @@ hr {
 
   .grid_1-1_1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-left: 20%;
     padding-right: 2%;
     font-size: 20px;
+  }
+
+  .footer_samlet {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 15%;
   }
 }
 
