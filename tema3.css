@@ -32,11 +32,19 @@
   background-image: url(img/bagg2.svg);
   background-size: cover;
   aspect-ratio: 1955.98/335.42;
+  padding-bottom: 4%;
+}
+
+@media screen and (max-width: 970px) {
+  .wave {
+    padding-bottom: 6%;
+    padding-top: 0%;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .wave {
-    padding-bottom: 10%;
+    padding-bottom: 12%;
     padding-top: 5%;
   }
 
@@ -306,7 +314,8 @@ hr {
 }
 
 /** PROCESSEN **/
-.tema3_grid_3-1 {
+.tema3_grid_3-1,
+.tema4_grid_2-1 {
   padding-top: 5%; /** Afstand **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To Kolonner **/
@@ -317,7 +326,8 @@ hr {
 }
 
 /** PRÆSENTATION AF PROJEKT **/
-.tema3_grid_4-1 {
+.tema3_grid_4-1,
+.tema4_grid_4-1 {
   padding-top: 5%; /** Afstand **/
   display: grid; /** Grid **/
   grid-template-columns: 1fr 1fr; /** To Kolonner **/
@@ -334,7 +344,7 @@ hr {
   background-image: url(img/bagg.svg); /** Baggrundsbillede **/
   background-size: cover; /** Cover **/
   aspect-ratio: 1938.9/619.3; /** Størrelse **/
-  padding-bottom: 7%; /** Større bølge **/
+  padding-bottom: 10%; /** Større bølge **/
   padding-top: 2%; /** Større bølge **/
 }
 
@@ -373,16 +383,36 @@ hr {
   padding-top: 8%; /** Større bølge **/
 }
 
+.tema4_grid_2-1 {
+  padding-top: 0%; /** Afstand **/
+  padding-bottom: 0%;
+}
+
+.tema4_grid_4-1 {
+  padding-top: 0%; /** Afstand **/
+  padding-bottom: 0%;
+}
+
 /** KNAPPER **/
 .knapperne {
   text-align: center;
   padding-bottom: 5%;
 }
 
+#spil {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
 @media screen and (max-width: 800px) {
   .wave_tema4v2 {
-    padding-bottom: 35%; /** Større bølge **/
-    padding-top: 25%; /** Større bølge **/
+    padding-bottom: 46%; /** Større bølge **/
+    padding-top: 40%; /** Større bølge **/
+  }
+
+  .tema4_grid_2-1 {
+    padding-top: 10%;
+    padding-bottom: 14%;
   }
 
   .wave_tema4 {
@@ -406,7 +436,9 @@ hr {
   }
 
   /** PROCESSEN **/
-  .tema3_grid_3-1 {
+  .tema3_grid_3-1,
+  .tema4_grid_2-1,
+  .tema4_grid_4-1 {
     grid-template-columns: 1fr;
   }
 

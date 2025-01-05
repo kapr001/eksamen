@@ -216,9 +216,106 @@ p {
   }
 }
 
+/** TEMA 1 **/
+@media (max-width: 950px) {
+  .tema1 {
+    margin-top: -5%;
+    padding: 5%;
+  }
+
+  #tema_1 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+  }
+
+  .tv1 {
+    position: relative;
+    top: -30%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 790px) {
+  .tv1 {
+    top: -18%;
+  }
+}
+
+/** TEMA 2 **/
+@media (max-width: 950px) {
+  .tema2 {
+    margin-top: -25%;
+    padding: 5%;
+  }
+
+  #tema2 {
+    padding-top: 0%;
+    padding-bottom: 7%;
+  }
+
+  .mac {
+    top: 6%;
+    left: 20%;
+  }
+}
+
+/** TEMA 3 **/
+@media (max-width: 950px) {
+  .tema3 {
+    margin-top: -5%;
+    padding: 5%;
+  }
+
+  #tema3 {
+    padding-top: 8%;
+    padding-bottom: 7%;
+  }
+
+  .karo {
+    position: relative;
+    top: -10%;
+    left: 10%;
+  }
+}
+
+/** TEMA 4 **/
+@media (max-width: 950px) {
+  .tema4 {
+    margin-top: -25%;
+    padding: 5%;
+  }
+
+  #tema4 {
+    padding-top: 0%;
+    padding-bottom: 7%;
+  }
+
+  .ipad {
+    position: relative;
+    top: 17%;
+    left: -15%;
+  }
+}
+
+/** TEMA 5 **/
+@media (max-width: 950px) {
+  .tema5 {
+    margin-top: -5%;
+    padding: 5%;
+  }
+
+  #tema5 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+  }
+
+  .iphone {
+    top: 21%;
+    left: 10%;
+  }
+}
 /** MOBIL ENHED **/
 @media (max-width: 660px) {
-  /** TEMA 3 **/
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -247,19 +344,18 @@ p {
     grid-column: span 2; /** Fylder 2 kolonner **/
     margin-left: -10%; /** Mindre afstand til venstre **/
     margin-right: 10%; /** Mindre afstand til højre **/
-    margin-top: 25%; /** Mere plads i toppen **/
-    margin-bottom: 30%; /** Mere plads i bunden **/
+    margin-top: 15%; /** Mere plads i toppen **/
+    margin-bottom: 40%; /** Mere plads i bunden **/
     position: relative; /** Gør container flytbar **/
     padding: 1%; /** En lille smule mellemrum **/
   }
-
   .tema2 {
     order: -1; /** Ændre rækkefølge fra desktop **/
     grid-column: span 2;
     padding: 1%;
     margin-left: 10%; /** Mindre afstand til venstre **/
     margin-right: -10%; /** Mindre afstand til højre **/
-    margin-top: -10%;
+    margin-top: -5%;
     padding: 1%;
   }
 
@@ -273,7 +369,7 @@ p {
     grid-column: span 2; /** Fylder 2 kolonner **/
     margin-left: -10%; /** Mindre afstand til venstre **/
     margin-right: 10%; /** Mindre afstand til højre **/
-    margin-top: 20%; /** Mere plads i toppen **/
+    margin-top: 10%; /** Mere plads i toppen **/
     margin-bottom: 30%; /** Mere plads i bunden **/
     position: relative; /** Gør container flytbar **/
     padding: 1%; /** En lille smule mellemrum **/
@@ -299,6 +395,7 @@ p {
     margin-left: 10%; /** Mindre afstand til venstre **/
     margin-right: -10%; /** Mindre afstand til højre **/
     padding: 1%;
+    margin-top: 3%;
   }
 
   .ipad {
@@ -313,7 +410,7 @@ p {
     grid-column: span 2; /** Fylder 2 kolonner **/
     margin-left: -10%; /** Mindre afstand til venstre **/
     margin-right: 10%; /** Mindre afstand til højre **/
-    margin-top: 23%; /** Mere plads i toppen **/
+    margin-top: 10%; /** Mere plads i toppen **/
     margin-bottom: 30%; /** Mere plads i bunden **/
     position: relative; /** Gør container flytbar **/
     padding: 1%; /** En lille smule mellemrum **/
@@ -347,6 +444,14 @@ p {
     grid-column: span 2;
   }
 
+  #knap1 a,
+  #knap2 a,
+  #knap3 a,
+  #knap4 a,
+  #knap5 a {
+    font-size: 0.8rem;
+  }
+
   #knap2 {
     grid-column: span 2;
   }
@@ -361,5 +466,19 @@ p {
 
   #knap5 {
     grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .tema1 {
+    padding-top: 10%;
+  }
+
+  .tema3 {
+    padding-top: 10%;
+  }
+
+  .tema5 {
+    padding-top: 10%;
   }
 }
