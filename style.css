@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 img {
   width: 100%;
   height: auto; /* Bevarer billedets proportioner */
@@ -23,7 +24,7 @@ html {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1200px; /** Max størrelse på 1200 px **/
   margin-inline: auto;
 }
 
@@ -39,7 +40,7 @@ body {
 .menu a {
   padding: 15px; /** Mellemrum **/
   text-decoration: none; /** Fjerner underscore **/
-  color: black;
+  color: black; /** Sort **/
   display: inline-block; /** Påkrævet for transform **/
 }
 
@@ -48,7 +49,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   font-family: raleway; /** Font **/
   text-transform: uppercase; /** Caps lock **/
-  text-align: center;
+  text-align: center; /** Tekst i midten **/
   justify-content: space-between; /** Lige meget mellemrum **/
   max-width: 1200px; /** Sætter størrelsen **/
   margin-inline: auto; /** Auto i midten **/
@@ -59,17 +60,10 @@ body {
   font-weight: 500; /** Lidt fed **/
 }
 
-@media (max-width: 870px) {
-  .menu {
-    font-size: 0.7rem;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
 /** underlinje **/
 .menu a {
-  position: relative;
-  text-decoration: none;
+  position: relative; /** Flytbar **/
+  text-decoration: none; /** Fjerner underscore **/
   color: black; /** Farve **/
 }
 
@@ -98,6 +92,10 @@ body {
   padding-top: 2%; /** Mellemrum i toppen **/
 }
 
+.logo_2 {
+  display: none; /** Fjerner logo i desktop **/
+}
+
 .burger {
   width: 30px; /** længdre på mburger ***/
   cursor: pointer; /** Gør menuen klikbar **/
@@ -113,82 +111,22 @@ body {
   display: none; /** Fjerner burger i desktop **/
 }
 
-/** FOOTER **/
-hr {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  color: grey;
-  opacity: 50%;
-}
-
-.grid_1-1-1 a {
-  text-decoration: none;
-  color: black;
-  font-family: raleway; /** Font **/
-}
-
-.grid_1-1-1 {
-  padding-left: 50%;
-  margin-bottom: 2%;
-}
-
-.footer_1:hover a,
-.footer_2:hover a,
-.footer_3:hover a {
-  color: var(--lilla-color);
-}
-
-.grid_1-1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 25%;
-  padding-right: 25%;
-  font-size: 40px;
-}
-
-.grid_1-1_1 a {
-  color: black;
-}
-
-.footer_samlet {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.linkedin:hover,
-.facebook:hover,
-.instagram:hover {
-  color: var(--lilla-color);
-}
-
-@media screen and (max-width: 1052px) {
-  .grid_1-1-1 a {
-    text-decoration: none;
-    font-size: 15px;
-  }
-
-  .grid_1-1-1 {
-    padding-left: 30%;
-    margin-bottom: 2%;
+/** Menu responsiv **/
+@media (max-width: 870px) {
+  .menu {
+    font-size: 0.7rem; /** Mindre font **/
+    padding-left: 10%; /** Mindre padding **/
+    padding-right: 10%; /** Mindre padding **/
+    font-weight: bold;
   }
 }
 
-@media screen and (max-width: 720px) {
-  .grid_1-1-1 a {
-    text-decoration: none;
-    font-size: 15px;
-  }
-
-  .grid_1-1-1 {
-    padding-left: 20%;
-    margin-bottom: 2%;
-  }
-}
+/** HEADER MOBILFORMAT **/
 @media (max-width: 600px) {
   header {
     display: flex;
     justify-content: space-between; /** Menu højre **/
-
+    padding-bottom: 3%;
     margin-inline: auto; /** Auto i midten **/
   }
 
@@ -196,7 +134,7 @@ hr {
     display: inline; /** Logo_2 synlig i mobil **/
     width: 50px; /** px gør at billede ikke justeres **/
     padding-left: 8%; /** Mellemrum venstre **/
-    padding-top: 2%; /** Mellemrum til top **/
+    padding-top: 20%; /** Mellemrum til top **/
   }
 
   .logo1 {
@@ -205,7 +143,7 @@ hr {
 
   .menu {
     display: none; /** Menu vises **/
-    margin-top: -50px; /** Samme afstand til top = px **/
+    margin-top: -25px; /** Samme afstand til top = px **/
     padding-left: 0%; /** Mellemrum venstre **/
     padding-right: 0%; /** Mellemrum højre **/
   }
@@ -214,7 +152,7 @@ hr {
     display: block; /** Gør burger-menu synlig **/
     margin-left: -20%; /** Mellemrum venstre **/
     margin-top: 60%; /** Mellemrum til top **/
-    padding-bottom: 60%;
+    padding-bottom: 70%;
   }
 
   .burger.active .line:nth-child(1) {
@@ -240,10 +178,12 @@ hr {
     width: 100%; /** Menu fylder hele skærm **/
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /** Skygge **/
     z-index: 10; /** Rykker menu frem foran alt**/
+    text-align: left;
   }
 
   nav.active .menu li {
     margin: 5px 5px; /** Mellemrum mellem links **/
+    padding-left: 1%;
   }
 
   nav.active .menu a {
@@ -255,52 +195,130 @@ hr {
     width: 0%; /** Underlinjen forsvinder **/
   }
 
-  /** FOOTER **/
+  .menu li {
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+/** FOOTER **/
+hr {
+  margin-top: 2%; /** Afstand bund **/
+  margin-bottom: 2%; /** Afstand top **/
+  color: grey; /** Farve **/
+  opacity: 50%; /** Halvt vist **/
+}
+
+.grid_1-1-1 a {
+  text-decoration: none; /** Fjerner underscore **/
+  color: black; /** Farve **/
+  font-family: raleway; /** Font **/
+}
+
+.grid_1-1-1 {
+  padding-left: 50%; /** Mellemrum venstre **/
+  margin-bottom: 2%; /** Afstand bund **/
+}
+
+/** HOVER EFFEKT PÅ FOOTER **/
+.footer_1:hover a,
+.footer_2:hover a,
+.footer_3:hover a {
+  color: var(--lilla-color); /** Hover farve **/
+}
+
+.grid_1-1_1 {
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 25%; /** Mellemrum venstre **/
+  padding-right: 25%; /** Mellemrum højre **/
+  font-size: 40px; /** Tekst størrelse **/
+}
+
+.grid_1-1_1 a {
+  color: black; /** Farve **/
+}
+
+/** HOVER EFFEKT SOME **/
+.linkedin:hover,
+.facebook:hover,
+.instagram:hover {
+  color: var(--lilla-color); /** Hover farve **/
+}
+
+/** Samlet footer **/
+.footer_samlet {
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr;
+}
+
+/** FOOTER RESPONSIV **/
+@media screen and (max-width: 1052px) {
   .grid_1-1-1 a {
-    text-decoration: none;
-    font-size: 11px;
+    font-size: 15px; /** Mindre font **/
   }
 
   .grid_1-1-1 {
-    padding-left: 5%;
-    margin-bottom: 2%;
+    padding-left: 30%; /** Mindre padding **/
+    margin-bottom: 2%; /** Mindre afstand bund **/
+  }
+}
+
+/** FOOTER RESPONSIV **/
+@media screen and (max-width: 720px) {
+  .grid_1-1-1 {
+    padding-left: 20%; /** Mindre padding **/
+  }
+}
+
+/** FOOTER MOBILFORMAT **/
+@media (max-width: 600px) {
+  .grid_1-1-1 a {
+    font-size: 11px; /** Mindre tekst **/
   }
 
+  .grid_1-1-1 {
+    padding-left: 5%; /** Mindre afstand venstre **/
+  }
+
+  /** SOME GRID **/
   .grid_1-1_1 {
     display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 20%;
-    padding-right: 2%;
-    font-size: 20px;
+    grid-template-columns: 1fr; /** En kolonne **/
+    padding-left: 20%; /** Mellemrum venstre **/
+    padding-right: 2%; /** Mellemrum højre **/
+    font-size: 20px; /** Mindre tekstørrelse **/
   }
 
+  /** SAMLET FOOTER **/
   .footer_samlet {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding-bottom: 20%;
+    padding-bottom: 20%; /** Stor afstand bund **/
   }
 }
 
 /** BACK TO TOP KNAP **/
+/** BACK TO TOP MED W3 SCHOOLS **/
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: var(--knap-color);
-  color: white; /** Pil **/
+  display: none; /** Fjerner, viser med JS **/
+  position: fixed; /** Fastgør **/
+  bottom: 20px; /** Placering **/
+  right: 30px; /** Placering **/
+  z-index: 99; /** Kommer frem, for alt **/
+  font-size: 18px; /** Font størrelse **/
+  border: none; /** Stroke væk **/
+  background-color: var(--knap-color); /** Knap farve **/
+  color: white; /** Pil farve **/
   cursor: pointer; /** Pege **/
-  padding: 10px 30px; /* Indvendig afstand */
+  padding: 10px /** top + bund **/ 30px; /** højre + venstre **/ /** Indvendig afstand **/
 }
 
+/** HOVER B2TOP **/
 #myBtn:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-color); /** Farve **/
 }
 
+/** PIL I KNAP **/
 .arrow {
   border: solid white; /** Solid for at vise **/
   border-width: 0 3px 3px 0; /** Form **/
@@ -309,10 +327,10 @@ hr {
 }
 
 .up {
-  transform: rotate(-135deg); /** Roterer **/
-  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg); /** Roterer V **/
 }
 
+/** HOVER **/
 #myBtn:hover .arrow {
   border: solid black; /** Solid for at vise **/
   border-width: 0 3px 3px 0; /** Form **/

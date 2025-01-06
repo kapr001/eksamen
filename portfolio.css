@@ -1,19 +1,3 @@
-/** KNAPPER I PORTFOLIO **/
-.knap1 {
-  display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: var(--knap-color); /* Grøn baggrund */
-  padding: 10px 20px; /* Indvendig afstand */
-  text-align: center; /* Centrer tekst */
-  cursor: pointer; /* Hånd-markør */
-}
-
-.knap1 a {
-  text-decoration: none; /** Fjerner underscore **/
-  color: var(--tekstknap-color); /** Farve **/
-  font-family: roboto; /** Font **/
-  font-size: 0.9rem;
-}
-
 /** TEMA OVERSKRIFT **/
 .h13 {
   color: black; /** Sort **/
@@ -36,8 +20,25 @@
   font-size: 1rem;
 }
 
+/** ALM TEKST **/
 p {
-  font-family: lato;
+  font-family: lato; /** FONT **/
+}
+
+/** KNAPPER I PORTFOLIO **/
+.knap1 {
+  display: inline-block; /* Gør linket til en blok, der kan styles */
+  background-color: var(--knap-color); /* Grøn baggrund */
+  padding: 10px 20px; /* Indvendig afstand */
+  text-align: center; /* Centrer tekst */
+  cursor: pointer; /* Hånd-markør */
+}
+
+.knap1 a {
+  text-decoration: none; /** Fjerner underscore **/
+  color: var(--tekstknap-color); /** Farve **/
+  font-family: roboto; /** Font **/
+  font-size: 0.9rem; /** Størrelse **/
 }
 
 /* KNAP 1 HOVER EFFEKT */
@@ -54,8 +55,9 @@ p {
   color: var(--hover-tekst); /** Ændrer farven til sort ved hover **/
 }
 
+/** Knapper sammen **/
 .grid_menu {
-  padding-top: 2%;
+  padding-top: 2%; /** Afstand til hero **/
 }
 
 /** Tekstfelt i portfolio **/
@@ -103,12 +105,64 @@ p {
   top: -6%; /** Top **/
 }
 
-/** TEMA 1 BILLEDE **/
-.bølge img {
-  width: 61%; /** Størrelse **/
-  position: relative; /** Forbliver + justering **/
-  left: 10%; /** Venstre **/
-  top: 24%; /** Højre **/
+/** Billede **/
+.tv1 {
+  width: 80%; /** Størrelse **/
+  position: relative; /** Forbliver + flytbar **/
+  left: 4%; /** Venstre **/
+  top: 9%; /** Top **/
+}
+
+/** TEMA 1 RESPONSIV **/
+@media (max-width: 950px) {
+  /** Tekstfelt **/
+  .tema1 {
+    margin-top: -5%; /** Mindre afstand top **/
+    padding: 5%; /** Mindre padding **/
+  }
+
+  /** Bølgen **/
+  #tema_1 {
+    padding-top: 10%; /** Afstand top **/
+    padding-bottom: 7%; /** Afstand bund **/
+  }
+
+  /** Billede **/
+  .tv1 {
+    position: relative;
+    top: 0%;
+    left: 7%;
+    width: 85%;
+  }
+}
+
+/** TEMA 1 RESPONSIV **/
+@media (max-width: 790px) {
+  .tv1 {
+    top: -2%;
+    width: 90%;
+    left: 4%;
+  }
+}
+
+/** TEMA 1 MOBILFORMAT **/
+@media (max-width: 660px) {
+  .tema1 {
+    grid-column: span 2; /** Fylder 2 kolonner **/
+    margin-left: -10%; /** Mindre afstand til venstre **/
+    margin-right: 10%; /** Mindre afstand til højre **/
+    margin-top: 15%; /** Mere plads i toppen **/
+    margin-bottom: 40%; /** Mere plads i bunden **/
+    position: relative; /** Gør container flytbar **/
+    padding: 1%; /** En lille smule mellemrum **/
+  }
+
+  #tema_1 img {
+    margin-bottom: -106%;
+    top: -191%;
+    width: 165%;
+    left: 24%;
+  }
 }
 
 /** TEMA 2 **/
@@ -121,13 +175,64 @@ p {
   padding-right: 20%; /** Højre **/
 }
 
-/** TEMA 2 BILLEDE **/
+/** Billede **/
 .mac {
   order: -1; /** Omvendt rækkefølge **/
   width: 69%; /** Størrelse **/
   position: relative; /** Forbliver + justering **/
   left: 27%; /** Venstre **/
   top: 3%; /** Top **/
+}
+
+/** TEMA 2 RESPONSIV **/
+@media (max-width: 950px) {
+  /** Tekst **/
+  .tema2 {
+    margin-top: -25%; /** Mindre afstand top **/
+    padding: 5%; /** Mindre padding **/
+  }
+
+  /** Hvid baggrund **/
+  #tema2 {
+    padding-top: 0%; /** Intet padding **/
+    padding-bottom: 7%; /** Afstand bund **/
+  }
+
+  /** Billede **/
+  .mac {
+    top: 6%; /** Top **/
+    left: 20%; /** Venstre **/
+  }
+}
+
+/** TEMA 2 MOBILFORMAT **/
+@media (max-width: 660px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /** Mindre gap **/
+  }
+
+  /** Tekstfelt **/
+  .tema2 {
+    order: -1; /** Ændre rækkefølge fra desktop **/
+    grid-column: span 2;
+    padding: 1%;
+    margin-left: 10%; /** Mindre afstand til venstre **/
+    margin-right: -10%; /** Mindre afstand til højre **/
+    margin-top: -5%;
+    padding: 1%;
+  }
+
+  #tema2 {
+    margin-bottom: 10%;
+  }
+
+  .mac {
+    left: 30%;
+    top: 22%;
+    width: 143%;
+  }
 }
 
 /** TEMA 3 **/
@@ -138,9 +243,46 @@ p {
   top: -6%; /** Top **/
 }
 
-/** TEMA 3 BILLEDE **/
+/** Billede **/
 .karo {
   padding-left: 1%; /** Venstre mellemrum **/
+  position: relative;
+  width: 65%;
+  top: 23%;
+  left: 10%;
+}
+
+/** TEMA 3 RESPONSIV **/
+@media (max-width: 950px) {
+  /** Tekstfelt **/
+  .tema3 {
+    margin-top: -5%; /** Afstand top **/
+    padding: 5%; /** Mindre padding **/
+  }
+
+  /** Bølge **/
+  #tema3 {
+    padding-top: 8%; /** Afstand top **/
+    padding-bottom: 7%; /** Afstand bund **/
+  }
+
+  /** Billede **/
+  .karo {
+    top: 15%;
+    left: 26%;
+  }
+}
+
+@media (max-width: 660px) {
+  .tema3 {
+    grid-column: span 2; /** Fylder 2 kolonner **/
+    margin-left: -10%; /** Mindre afstand til venstre **/
+    margin-right: 10%; /** Mindre afstand til højre **/
+    margin-top: 10%; /** Mere plads i toppen **/
+    margin-bottom: 30%; /** Mere plads i bunden **/
+    position: relative; /** Gør container flytbar **/
+    padding: 1%; /** En lille smule mellemrum **/
+  }
 }
 
 /** TEMA 4 **/
@@ -153,13 +295,40 @@ p {
   padding-right: 20%; /** Aftand top **/
 }
 
-/** TEMA 4 BILLEDE **/
+/** Billede **/
 .glamgrab {
   order: -1; /** Omvendt rækkefølge **/
   width: 79%; /** Størrelse **/
   position: relative; /** Forbliver + justering **/
   left: 21%; /** Venstre **/
   top: 8%; /** Top **/
+}
+
+/** TEMA 4 RESPONSIV **/
+@media (max-width: 950px) {
+  /** Tekstfelt **/
+  .tema4 {
+    margin-top: -25%; /** Afstand top **/
+    padding: 5%; /** Mindre padding **/
+  }
+
+  /** Bølge **/
+  #tema4 {
+    padding-top: 0%; /** Ingen padding **/
+    padding-bottom: 7%; /** padding bund **/
+  }
+}
+
+/** TEMA 4 MOBIL **/
+@media (max-width: 660px) {
+  #tema4 img {
+    margin-bottom: 50%;
+    top: 17%;
+  }
+
+  #tema4 {
+    margin-top: -10%;
+  }
 }
 
 /** TEMA 5 **/
@@ -170,12 +339,33 @@ p {
   top: -6%; /** Højre **/
 }
 
-/** TEMA 5 BILLEDE **/
+/** Billede **/
 .iphone {
   width: 84%; /** Størrelse **/
   position: relative; /** Forbliver + justering **/
   left: 7%; /** Venstre **/
   top: 24%; /** Højre **/
+}
+
+/** TEMA 5 RESPONSIV **/
+@media (max-width: 950px) {
+  /** Tekstfelt **/
+  .tema5 {
+    margin-top: -5%; /** Afstand top **/
+    padding: 5%; /** Mindre padding **/
+  }
+
+  /** Bølge **/
+  #tema5 {
+    padding-top: 10%; /** Afstand top **/
+    padding-bottom: 7%; /** Afstand bund **/
+  }
+
+  /** Billede **/
+  .iphone {
+    top: 21%; /** Top **/
+    left: 10%; /** Venstre **/
+  }
 }
 
 /** HOVER EFFEKT PÅ BILLEDER **/
@@ -188,183 +378,35 @@ p {
   transition: transform 0.3s ease; /** Tilføjer glidende overgang **/
 }
 
+/** RESPONSIV DESIGNS **/
 @media (max-width: 900px) {
+  /** H1 **/
   .h13 {
-    color: black;
-    font-size: 1.7rem;
+    font-size: 1.7rem; /** Mindre font **/
   }
 
+  /** TEMA 3 **/
   .tema3 {
-    margin-top: -3%;
-    position: relative;
-    left: 10%;
-    top: 0%;
-    margin-bottom: 10%;
+    margin-top: -3%; /** Margin **/
+    position: relative; /** Flytbar **/
+    left: 10%; /** Venstre **/
+    top: 0%; /** Top **/
+    margin-bottom: 10%; /** Afstand bund **/
   }
 
-  .h33 {
-    font-family: Alegreya Sans;
-    text-transform: uppercase;
-  }
-
+  /** TEMA 5 **/
   .tema5 {
-    margin-top: -3%;
-    position: relative;
-    left: 10%;
-    top: 0%;
-    margin-bottom: 10%;
+    margin-top: -3%; /** Margin **/
+    position: relative; /** Flytbar **/
+    left: 10%; /** Venstre **/
+    top: 0%; /** Top **/
+    margin-bottom: 10%; /** Afstand bund **/
   }
 }
 
-/** TEMA 1 **/
-@media (max-width: 950px) {
-  .tema1 {
-    margin-top: -5%;
-    padding: 5%;
-  }
-
-  #tema_1 {
-    padding-top: 10%;
-    padding-bottom: 7%;
-  }
-
-  .tv1 {
-    position: relative;
-    top: -30%;
-    left: 10%;
-  }
-}
-
-@media (max-width: 790px) {
-  .tv1 {
-    top: -18%;
-  }
-}
-
-/** TEMA 2 **/
-@media (max-width: 950px) {
-  .tema2 {
-    margin-top: -25%;
-    padding: 5%;
-  }
-
-  #tema2 {
-    padding-top: 0%;
-    padding-bottom: 7%;
-  }
-
-  .mac {
-    top: 6%;
-    left: 20%;
-  }
-}
-
-/** TEMA 3 **/
-@media (max-width: 950px) {
-  .tema3 {
-    margin-top: -5%;
-    padding: 5%;
-  }
-
-  #tema3 {
-    padding-top: 8%;
-    padding-bottom: 7%;
-  }
-
-  .karo {
-    position: relative;
-    top: -10%;
-    left: 10%;
-  }
-}
-
-/** TEMA 4 **/
-@media (max-width: 950px) {
-  .tema4 {
-    margin-top: -25%;
-    padding: 5%;
-  }
-
-  #tema4 {
-    padding-top: 0%;
-    padding-bottom: 7%;
-  }
-
-  .ipad {
-    position: relative;
-    top: 17%;
-    left: -15%;
-  }
-}
-
-/** TEMA 5 **/
-@media (max-width: 950px) {
-  .tema5 {
-    margin-top: -5%;
-    padding: 5%;
-  }
-
-  #tema5 {
-    padding-top: 10%;
-    padding-bottom: 7%;
-  }
-
-  .iphone {
-    top: 21%;
-    left: 10%;
-  }
-}
 /** MOBIL ENHED **/
 @media (max-width: 660px) {
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px; /** Mindre gap **/
-  }
-
-  #tema_1 img {
-    margin-bottom: -57%;
-    top: -111%;
-  }
-
-  #tema2 {
-    margin-bottom: 10%;
-  }
-
-  #tema4 img {
-    margin-bottom: 50%;
-    top: 10%;
-  }
-
-  #tema4 {
-    margin-top: -10%;
-  }
-
-  .tema1 {
-    grid-column: span 2; /** Fylder 2 kolonner **/
-    margin-left: -10%; /** Mindre afstand til venstre **/
-    margin-right: 10%; /** Mindre afstand til højre **/
-    margin-top: 15%; /** Mere plads i toppen **/
-    margin-bottom: 40%; /** Mere plads i bunden **/
-    position: relative; /** Gør container flytbar **/
-    padding: 1%; /** En lille smule mellemrum **/
-  }
-  .tema2 {
-    order: -1; /** Ændre rækkefølge fra desktop **/
-    grid-column: span 2;
-    padding: 1%;
-    margin-left: 10%; /** Mindre afstand til venstre **/
-    margin-right: -10%; /** Mindre afstand til højre **/
-    margin-top: -5%;
-    padding: 1%;
-  }
-
-  .mac {
-    left: 23%;
-    top: 13%;
-    background-size: cover;
-  }
-
+  /** TEMA 3 **/
   .tema3 {
     grid-column: span 2; /** Fylder 2 kolonner **/
     margin-left: -10%; /** Mindre afstand til venstre **/
@@ -374,20 +416,15 @@ p {
     position: relative; /** Gør container flytbar **/
     padding: 1%; /** En lille smule mellemrum **/
   }
-  .bølge img {
-    width: 130%; /** Større iPad **/
+
+  .karo {
+    width: 67%; /** Større iPad **/
     position: relative; /** Gør element flytbar **/
-    top: -53%; /** Justerer hvor billedet er **/
-    left: 35%; /** Justerer hvor billedet er **/
+    top: -44%; /** Justerer hvor billedet er **/
+    left: 33%; /** Justerer hvor billedet er **/
   }
 
   /** TEMA 4 **/
-  .grid_1-1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px; /** Mindre gap **/
-  }
-
   .tema4 {
     order: -1; /** Ændre rækkefølge fra desktop **/
     grid-column: span 2;
@@ -398,14 +435,16 @@ p {
     margin-top: 3%;
   }
 
+  /** TEMA 3 BILLEDE **/
   .ipad {
     width: 211%;
     position: relative;
-    left: 4%;
+    left: 0%;
     top: 0%;
     background-size: cover;
   }
 
+  /** TEMA 5 **/
   .tema5 {
     grid-column: span 2; /** Fylder 2 kolonner **/
     margin-left: -10%; /** Mindre afstand til venstre **/
@@ -416,32 +455,40 @@ p {
     padding: 1%; /** En lille smule mellemrum **/
   }
 
-  .iphone img {
-    width: 100%;
-    position: relative;
-    left: 50%;
-    top: -40%;
-    background-size: cover;
-  }
-
+  /** TEMA 5 BILLEDE **/
   .passionportraits img {
     width: 170%;
-    top: -53%;
+    top: -48%;
     left: 20%;
   }
 
   /** KNAPPER I PORTFOLIO **/
-
   .grid_menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
+    gap: 10px; /** Mellemrum **/
+    padding-left: 10%; /** Padding **/
+    padding-right: 10%; /** Padding **/
   }
 
   #knap1 {
-    grid-column: span 2;
+    grid-column: span 2; /** Strækker sig over 2 **/
+  }
+
+  #knap2 {
+    grid-column: span 2; /** Strækker sig over 2 **/
+  }
+
+  #knap3 {
+    grid-column: span 2; /** Strækker sig over 2 **/
+  }
+
+  #knap4 {
+    grid-column: 2 / span 2; /** Starter 2, strækker sig 2 **/
+  }
+
+  #knap5 {
+    grid-column: span 2; /** Strækker sig over 2 **/
   }
 
   #knap1 a,
@@ -449,36 +496,21 @@ p {
   #knap3 a,
   #knap4 a,
   #knap5 a {
-    font-size: 0.8rem;
-  }
-
-  #knap2 {
-    grid-column: span 2;
-  }
-
-  #knap3 {
-    grid-column: span 2;
-  }
-
-  #knap4 {
-    grid-column: 2 / span 2;
-  }
-
-  #knap5 {
-    grid-column: span 2;
+    font-size: 0.8rem; /** Mindre font **/
   }
 }
 
+/** 600PX TEKSTFELT HVID **/
 @media (max-width: 600px) {
   .tema1 {
-    padding-top: 10%;
+    padding-top: 10%; /** Padding top **/
   }
 
   .tema3 {
-    padding-top: 10%;
+    padding-top: 10%; /** Padding top **/
   }
 
   .tema5 {
-    padding-top: 10%;
+    padding-top: 10%; /** Padding top **/
   }
 }

@@ -1,5 +1,50 @@
 /** BILELDE FORMAT STØRRELSE 800x500 px **/
 
+/** TEKST INDENI BØLGEN **/
+.indeni {
+  position: relative; /** Flytbar **/
+  top: 32%; /** Top **/
+}
+
+/** H1 **/
+h1 {
+  text-align: center; /** Midt **/
+  text-transform: uppercase; /** Caps lock **/
+  font-family: roboto; /** Font **/
+}
+
+/** H2 **/
+h2 {
+  text-align: center; /** Midt **/
+  text-transform: uppercase; /** Caps lock **/
+  font-family: Alegreya Sans; /** Font **/
+}
+
+/** H3 **/
+h3 {
+  text-transform: uppercase; /** Caps lock **/
+  font-family: Alegreya Sans; /** Font **/
+  font-size: 2rem; /** Størrelse **/
+}
+
+/** P **/
+p {
+  font-family: lato; /** Font **/
+  line-height: 1.8;
+  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
+}
+
+/** STREG BILLEDE **/
+.streg {
+  padding-bottom: 3%; /** Afstand bund **/
+}
+
+/** AFSTAND TIL FOOTER **/
+hr {
+  margin-top: 5%; /** Afstand **/
+}
+
+/** KNAP **/
 .knap {
   display: inline-block; /* Gør linket til en blok, der kan styles */
   background-color: var(--knap-color); /* Grøn baggrund */
@@ -28,24 +73,60 @@
 .knap:hover a {
   color: var(--hover-tekst);
 }
+
+/** A TAG (KNAPPER UNDER P) **/
+a {
+  text-decoration: none; /** Fjerner underscore **/
+  color: var(--tekstknap-color); /** Farve **/
+  font-family: roboto; /** Font **/
+}
+
+/** HOVER FARVE **/
+a:hover {
+  color: var(--hover-tekst);
+}
+
+/** TEKSTFELT EFTER KNAP/HERO **/
+.p_tema {
+  text-align: center; /** Centrerer **/
+  padding-top: 5%; /** Afstand top **/
+  max-width: 65ch; /** Maks 65 en pr. linje **/
+  margin: 0 auto; /** Tekst midt **/
+  line-height: 1.6; /** Linjehøjde **/
+  word-wrap: break-word; /** Bryder ord **/
+}
+
+.p_tema2 {
+  text-align: center; /** Centrerer **/
+  padding-top: 3%; /** Afstand top **/
+  max-width: 65ch; /** Maks 65 en pr. linje **/
+  margin: 0 auto; /** Tekst midt **/
+  line-height: 1.6; /** Linjehøjde **/
+  word-wrap: break-word; /** Bryder ord **/
+  padding-bottom: 5%; /** Afstand bund **/
+}
+
+/** OVERSKRIFTSBØLGE 1, 2, 3, 4 & 5 **/
 .wave {
   background-image: url(img/bagg2.svg);
   background-size: cover;
   aspect-ratio: 1955.98/335.42;
-  padding-bottom: 4%;
+  padding-bottom: 4%; /** Afstand bund **/
 }
 
+/** Responsiv **/
 @media screen and (max-width: 970px) {
   .wave {
-    padding-bottom: 6%;
-    padding-top: 0%;
+    padding-bottom: 6%; /** Padding bund **/
+    padding-top: 0%; /** Ingen padding **/
   }
 }
 
+/** Responsiv **/
 @media screen and (max-width: 800px) {
   .wave {
-    padding-bottom: 12%;
-    padding-top: 5%;
+    padding-bottom: 12%; /** Padding bund **/
+    padding-top: 5%; /** Padding top **/
   }
 
   h3 {
@@ -57,53 +138,14 @@
   }
 }
 
-.indeni {
-  position: relative;
-  top: 32%;
-}
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: roboto; /** Font **/
-}
-
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Alegreya Sans;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-family: Alegreya Sans;
-  font-size: 2rem;
-  padding-bottom: 2%;
-}
-
-p {
-  font-family: lato; /** Font **/
-  line-height: 1.8;
-  max-width: 65ch; /** Begrænser til maks. 65 tegn pr. linje **/
-}
-
-.streg {
-  padding-bottom: 3%;
-}
-
-hr {
-  margin-top: 5%;
-}
-
-/** OVERSKRIFTER OPGAVER **/
-
+/** OVERSKRIFTER PROJEKTER **/
 #passion,
 #virksomhed,
 #studiestart,
 #intro,
 #spil,
 #emne {
-  margin-bottom: -3%;
+  margin-bottom: -3%; /** Afstand bund **/
   background-image: url(img/bagg_tema5.svg);
   background-size: cover;
   aspect-ratio: 2056.1/205.31;
@@ -117,20 +159,21 @@ hr {
   gap: 10px;
 }
 
+/** OVERSKRIFT INTRO **/
 #intro {
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 4%; /** Padding **/
+  padding-bottom: 4%; /** Padding **/
 }
 
 /** PRÆSENTATION **/
 .grid_1-1 {
-  padding-top: 5%;
+  padding-top: 5%; /** Afstand top **/
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding-bottom: 5%;
-  padding-left: 1%;
-  padding-right: 1%;
+  gap: 20px; /** Mellemrum **/
+  padding-bottom: 5%; /** Afstand bund **/
+  padding-left: 1%; /** Padding **/
+  padding-right: 1%; /** Padding **/
 }
 
 /** BRAINSTORM **/
@@ -168,6 +211,7 @@ hr {
   display: none; /** Fjerner lille video **/
 }
 
+/** RESPONSIV TEMA 1 **/
 @media screen and (max-width: 800px) {
   /** PRÆSENTATION **/
   .grid_1-1 {
@@ -185,8 +229,8 @@ hr {
 
   /** BØLGE **/
   .wave_tema1 {
-    padding-top: 10%; /** Større bølge **/
-    padding-bottom: 30%; /** Større bølge **/
+    padding-top: 5%; /** Større bølge **/
+    padding-bottom: 20%; /** Større bølge **/
   }
 
   /** VIDEO **/
@@ -202,10 +246,20 @@ hr {
   }
 }
 
+/** MOBILFORMAT TEMA 1 **/
+@media screen and (max-width: 700px) {
+  /** BØLGE **/
+  .wave_tema1 {
+    padding-top: 14%; /** Større bølge **/
+    padding-bottom: 30%; /** Større bølge **/
+  }
+}
+
 /** TEMA 2 **/
+/** STUDIE OVERSKRIFT **/
 #studiestart {
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 4%; /** Padding **/
+  padding-bottom: 4%; /** Padding **/
 }
 
 /** PRÆSENTATION **/
@@ -249,13 +303,15 @@ hr {
   transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
 }
 
+/** RESULTAT **/
 .billede_tema2 {
-  width: 550px;
+  width: 550px; /** Billedestørrelse **/
   padding-top: 2%; /** Afstand top **/
   display: flex; /** Række/ kolonne **/
   margin-inline: auto; /** Billede i midten **/
 }
 
+/** RESPONSIV TEMA 2 **/
 @media screen and (max-width: 800px) {
   /** PRÆSENTATION  **/
   .tema2_grid_1-1 {
@@ -271,21 +327,36 @@ hr {
     order: 1; /** Rigtig rækkefølge **/
   }
 
+  /** RESULTAT **/
   .billede_tema2 {
-    width: 350px;
+    width: 450px; /** Mindre billede i responsiv **/
   }
 
   /** BØLGE **/
   .wave_tema2 {
-    padding-top: 15%;
-    padding-bottom: 30%;
+    padding-top: 5%; /** Padding **/
+    padding-bottom: 20%; /** Padding **/
+  }
+}
+
+/** MOBILFORMAT TEMA 2 **/
+@media screen and (max-width: 700px) {
+  /** BØLGE **/
+  .wave_tema2 {
+    padding-top: 15%; /** Større padding **/
+    padding-bottom: 30%; /** Større padding **/
+  }
+
+  .billede_tema2 {
+    width: 350px; /** Mindre billede i mobil **/
   }
 }
 
 /** TEMA 3 **/
+/** OVERSKRIFT KARO **/
 #emne {
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 4%; /** Padding **/
+  padding-bottom: 4%; /** Padding **/
 }
 /** PRÆSENTATION **/
 .tema3_grid_1-1 {
@@ -355,72 +426,21 @@ hr {
   transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
 }
 
+/** RESULTAT BILLEDE **/
 .billede_tema3 {
   padding-top: 5%; /** Mellemrum top **/
   width: 550px; /** Billedestørrelse **/
   display: flex; /** Række/ kolonne **/
 }
 
+/** DIV CONTAINER **/
 .resultat1_tema3 {
   display: flex; /** Række/ kolonne **/
   justify-content: center; /** Video midt **/
 }
 
-/** TEMA 4 **/
-.wave_tema4 {
-  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
-  background-size: cover; /** Cover **/
-  aspect-ratio: 1938.9/619.3; /** Størrelse **/
-  padding-bottom: 15%; /** Større bølge **/
-  padding-top: 8%; /** Større bølge **/
-}
-
-.wave_tema4v2 {
-  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
-  background-size: cover; /** Cover **/
-  aspect-ratio: 1938.9/619.3; /** Størrelse **/
-  padding-bottom: 15%; /** Større bølge **/
-  padding-top: 8%; /** Større bølge **/
-}
-
-.tema4_grid_2-1 {
-  padding-top: 0%; /** Afstand **/
-  padding-bottom: 0%;
-}
-
-.tema4_grid_4-1 {
-  padding-top: 0%; /** Afstand **/
-  padding-bottom: 0%;
-}
-
-/** KNAPPER **/
-.knapperne {
-  text-align: center;
-  padding-bottom: 5%;
-}
-
-#spil {
-  padding-top: 4%;
-  padding-bottom: 4%;
-}
-
+/** RESPONSIV TEMA 3 **/
 @media screen and (max-width: 800px) {
-  .wave_tema4v2 {
-    padding-bottom: 46%; /** Større bølge **/
-    padding-top: 40%; /** Større bølge **/
-  }
-
-  .tema4_grid_2-1 {
-    padding-top: 10%;
-    padding-bottom: 14%;
-  }
-
-  .wave_tema4 {
-    padding-bottom: 35%; /** Større bølge **/
-    padding-top: 25%; /** Større bølge **/
-  }
-
-  /** MOBIL/TABLET **/
   /** PRÆSENTATION **/
   .tema3_grid_1-1 {
     grid-template-columns: 1fr; /** En kolonne **/
@@ -436,7 +456,109 @@ hr {
   }
 
   /** PROCESSEN **/
-  .tema3_grid_3-1,
+  .tema3_grid_3-1 {
+    grid-template-columns: 1fr;
+  }
+
+  /** PRÆSENTATION **/
+  .tema3_grid_4-1 {
+    grid-template-columns: 1fr; /** En kolonne **/
+  }
+
+  .tema3_billede4 {
+    order: 1; /** Billede i rigtig rækkefølge **/
+  }
+
+  /** BØLGE **/
+  .wave_tema3 {
+    padding-top: 10%; /** Større bølge **/
+    padding-bottom: 25%; /** Større bølge **/
+  }
+
+  /** RESULAT BILLEDE **/
+  .billede_tema3 {
+    width: 450px; /** Mindre billede **/
+  }
+}
+
+/** MOBILFORMAT TEMA 3 */
+@media screen and (max-width: 700px) {
+  .wave_tema3 {
+    padding-top: 20%; /** Større bølge **/
+    padding-bottom: 35%; /** Større bølge **/
+  }
+
+  .billede_tema3 {
+    width: 350px; /** Mindre billede **/
+  }
+}
+
+/** TEMA 4 **/
+/** OVERSKRIFT SPIL **/
+#spil {
+  padding-top: 4%; /** Padding **/
+  padding-bottom: 4%; /** Padding **/
+}
+
+/** BØLGE 1 **/
+.wave_tema4 {
+  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
+  background-size: cover; /** Cover **/
+  aspect-ratio: 1938.9/619.3; /** Størrelse **/
+  padding-bottom: 15%; /** Større bølge **/
+  padding-top: 8%; /** Større bølge **/
+}
+
+/** BØLGE 2 **/
+.wave_tema4v2 {
+  background-image: url(img/bagg.svg); /** Baggrundsbillede **/
+  background-size: cover; /** Cover **/
+  aspect-ratio: 1938.9/619.3; /** Størrelse **/
+  padding-bottom: 15%; /** Større bølge **/
+  padding-top: 8%; /** Større bølge **/
+}
+
+/** BRAINSTORM **/
+.tema4_grid_2-1 {
+  padding-top: 0%; /** Ingen padding **/
+  padding-bottom: 4%; /** Ingen padding **/
+}
+
+/** PRÆSENTATIO AF OPGAVEN **/
+.tema4_grid_4-1 {
+  padding-top: 0%; /** Ingen padding **/
+  padding-bottom: 4%; /** Ingen padding **/
+}
+
+/** KNAPPER **/
+.knapperne {
+  text-align: center; /** Midt **/
+}
+
+/** A TAG TEMA 4 **/
+.link_tema4 {
+  text-decoration: underline; /** Unerlinje igen **/
+  color: purple; /** Link farve **/
+}
+
+.link_tema4:hover {
+  color: purple; /** Intet hover **/
+}
+
+@media screen and (max-width: 800px) {
+  /** BRAINSTORM **/
+  .tema4_grid_2-1 {
+    padding-top: 10%; /** Padding **/
+    padding-bottom: 18%; /** Padding **/
+  }
+
+  /** PRÆSENTATION AF PROJEKT **/
+  .wave_tema4v2 {
+    padding-top: 20%; /** Større bølge **/
+    padding-bottom: 32%; /** Større bølge **/
+  }
+
+  /** PROCESSEN **/
   .tema4_grid_2-1,
   .tema4_grid_4-1 {
     grid-template-columns: 1fr;
@@ -451,41 +573,55 @@ hr {
     order: 1; /** Billede i rigtig rækkefølge **/
   }
 
-  .wave_tema3 {
-    padding-top: 20%; /** Større bølge **/
-    padding-bottom: 35%; /** Større bølge **/
+  /** RESULTAT BILLEDE **/
+  .billede_tema3 {
+    width: 450px; /** Mindre billede **/
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /** BRAINSTORM **/
+  .tema4_grid_2-1 {
+    padding-top: 25%; /** Padding **/
+    padding-bottom: 28%; /** Padding **/
   }
 
+  /** PRÆSENTATION AF PROJEKT **/
+  .wave_tema4v2 {
+    padding-bottom: 46%; /** Større bølge **/
+    padding-top: 40%; /** Større bølge **/
+  }
+
+  /** RESULTAT BILLEDE **/
   .billede_tema3 {
     width: 350px; /** Mindre billede **/
   }
 }
 
 /** TEMA 5 **/
-/** KNAPPER **/
-.knapper {
-  text-align: center;
-  padding-bottom: 5%;
-}
-
+/** OVERSKRIFT PASSION **/
 #passion {
-  padding-top: 4%;
-  padding-bottom: 3%;
+  padding-top: 4%; /** Padding **/
+  padding-bottom: 3%; /** Padding **/
 }
 
+/** OVERSKRIFT PASSION **/
 #virksomhed {
   padding-top: 5%;
   padding-bottom: 7%;
 }
 
-.billede_tema3 img {
-  margin: auto;
+/** KNAPPER **/
+.knapper {
+  text-align: center; /** Center **/
 }
 
+/** SKILLELINJE **/
 .hr_tema5 {
-  margin-bottom: 15%;
+  margin-bottom: 15%; /** Afstand bund **/
 }
 
+/** BØLGE **/
 .wave_tema5,
 .wave_tema5v2,
 .wave_tema51,
@@ -493,66 +629,84 @@ hr {
   background-image: url(img/bagg.svg); /** Baggrundsbillede **/
   background-size: cover; /** Cover **/
   aspect-ratio: 1938.9/619.3; /** Størrelse **/
-  padding-top: 5%;
+  padding-top: 7%; /** Padding **/
 }
 
+/** BRAINSTORM P **/
 .wave_tema5 {
-  padding-bottom: 10%;
+  padding-bottom: 9%; /** Padding **/
+  padding-top: 2%; /** Padding **/
 }
 
+/** PRÆSENTATION AF PROJEKT P **/
 .wave_tema5v2 {
-  padding-bottom: 8%;
+  padding-bottom: 8%; /** Padding **/
+  padding-top: 2%; /** Padding **/
 }
 
+/** BRAINSTORM R **/
 .wave_tema51 {
-  padding-bottom: 14%;
+  padding-top: 2%; /** Padding **/
+  padding-bottom: 14%; /** Padding **/
 }
 
+/** PRÆSENTATION AF PROJEKT R **/
 .wave_tema52 {
-  padding-bottom: 15%;
+  padding-top: 2%; /** Padding **/
+  padding-bottom: 16%; /** Padding **/
 }
 
+/** GALLERI I START **/
 .tema5_galleri {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 10px; /** GAP **/
 }
 
-/** MARGIN BILLEDER, TEMA 3, TEMA 4 & TEMA 5 **/
-
-.tema3_billede3,
-.tema3_billede2,
-.tema3_billede4 {
-  margin: auto;
-}
-
+/** RESPONSIV **/
 @media screen and (max-width: 800px) {
-  .wave_tema51,
-  .wave_tema52 {
-    padding-top: 25%; /** Større bølge **/
-    padding-bottom: 42%; /** Større bølge **/
-  }
-
+  /** PASSION **/
   .wave_tema5v2,
   .wave_tema5 {
-    padding-top: 15%; /** Større bølge **/
-    padding-bottom: 35%; /** Større bølge **/
+    padding-top: 8%; /** Større bølge **/
+    padding-bottom: 25%; /** Større bølge **/
   }
 
+  /** HAVERO **/
+  /** BRAINSTORM **/
+  .wave_tema51 {
+    padding-top: 9%; /** Større bølge **/
+    padding-bottom: 30%; /** Større bølge **/
+  }
+
+  /** PRÆSENTATION AF PROJEKT **/
+  .wave_tema52 {
+    padding-top: 15%; /** Større bølge **/
+    padding-bottom: 30%; /** Større bølge **/
+  }
+
+  /** OVERSKRIFTER PASSION & RE **/
   #passion,
   #virksomhed {
-    padding-top: 6%;
+    padding-top: 6%; /** Padding **/
   }
 
   #passion {
-    padding-bottom: 10%;
+    padding-bottom: 10%; /** Padding **/
   }
 
+  #virksomhed {
+    padding-top: 6%; /** Padding **/
+    padding-bottom: 12%; /** Padding **/
+  }
+
+  /** SKILLELINJE **/
   .hr_tema5 {
-    margin-top: 15%;
-    margin-bottom: 20%;
+    margin-top: 15%; /** Margin **/
+    margin-bottom: 20%; /** Margin **/
   }
 
+  /** TO KNAPPER GRID **/
   .knapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -560,51 +714,109 @@ hr {
     gap: 2px;
   }
 
+  /** PASSION KNAP **/
   #passion_knap {
-    grid-column: 3;
+    grid-column: 3; /** Start i kolonne 3 **/
   }
 
+  /** VIRKSOMHED KNAP **/
   #virksomhed_knap {
-    grid-row: 2;
-    grid-column: 2 / span 3;
+    grid-row: 2; /** 2. række **/
+    grid-column: 2 / span 3; /** Start i kolonne 2, span til 3 **/
   }
 
+  /** HOVER V KNAP **/
   .knap:hover {
     font-weight: normal; /** Normal **/
     transform: none; /** Intet zoom  **/
   }
 
+  /** GALLERI **/
   .tema5_galleri {
     grid-template-columns: 1fr;
     padding-bottom: 5%;
   }
+}
 
+/** MOBILFORMAT TEMA 5 **/
+@media screen and (max-width: 700px) {
+  .wave_tema51,
+  .wave_tema52 {
+    padding-top: 35%; /** Større bølge **/
+    padding-bottom: 42%; /** Større bølge **/
+  }
+
+  .wave_tema5v2,
+  .wave_tema5 {
+    padding-top: 20%; /** Større bølge **/
+    padding-bottom: 35%; /** Større bølge **/
+  }
+}
+
+/** GENERELT FOR ALLE PROJEKTER **/
+/** MARGIN BILLEDER, TEMA 3, TEMA 4 & TEMA 5 **/
+.billede1,
+.billede2,
+.tema1_billede1,
+.tema2_billede2,
+.tema3_billede1,
+.tema3_billede3,
+.tema3_billede2,
+.tema3_billede4,
+.billede_tema3 img {
+  margin: auto; /** Billeder i midten **/
+}
+
+/** GENERELT FOR ALLE PROJEKTER RESPONSIV **/
+@media screen and (max-width: 800px) {
+  /** GALLERI 1, 2, 3 & 4 **/
   .tema1_galleri {
     grid-template-columns: 1fr;
     padding-bottom: 3%;
   }
 
+  /** KNAPPER UNDER HERO BØLGE **/
   #passion,
   #studiestart,
   #intro,
   #spil,
   #emne {
-    padding-top: 4%;
-    padding-bottom: 8%;
+    padding-top: 4%; /** Padding **/
+    padding-bottom: 8%; /** Padding **/
   }
 
-  #virksomhed {
-    padding-top: 6%;
-    padding-bottom: 12%;
-  }
-
+  /** KNAPPER 1, 2, 3 & 4 **/
   .knapperne {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding-bottom: 15%;
+    padding-bottom: 2%;
   }
 
   .knap {
-    grid-column: 2;
+    grid-column: 2; /** Knap start 2 (midt) **/
+  }
+
+  /** TEKST 2 UNDER KNAPPER **/
+  .p_tema2 {
+    padding-top: 2%; /** Padding **/
+    padding-bottom: 10%; /** Padding **/
+  }
+}
+
+/** GENERELT FOR ALLE PROJEKTER MOBIL **/
+@media screen and (max-width: 600px) {
+  /** TEKSTEFLT 2 U KNAP **/
+  .p_tema2 {
+    padding-top: 5%; /** Padding **/
+    padding-bottom: 20%; /** Padding **/
+  }
+
+  /** KNAPPER **/
+  .knapperne {
+    padding-bottom: 2%; /** Padding **/
+  }
+
+  h3 {
+    margin-bottom: -1%;
   }
 }

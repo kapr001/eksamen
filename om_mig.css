@@ -177,14 +177,14 @@ p {
   margin: 0 auto; /** Centrerer video **/
   margin-top: 10px; /** Afstand til bunden **/
   margin-bottom: 20px; /** Afstand til toppen **/
-  padding-left: 50px; /** Mellemrum til venstre **/
-  padding-right: 50px; /** Mellemrum til højre **/
 }
 
 .video video {
+  display: flex;
   width: 100%; /** Fylder hele videoens bredde **/
   height: 450px; /** Fast højde **/
   object-fit: cover; /** Tilpasser videoen, så den beskæres **/
+  justify-content: center;
 }
 
 .grid_om_mig {
