@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Forside</title>
     <link rel="icon" type="image/webp" href="img/fav1.webp">
+    <meta name="robots" content="noindex">
 
 </head>
 
@@ -32,9 +33,9 @@
 
         <nav>
             <ul class="menu">
-                <li><a href="index.html" class="active"> Forside</a></li>
-                <li><a href="portfolio.html">Projekter</a></li>
-                <li><a href="om_mig.html">Karolines Eventyr</a></li>
+                <li class="nr1"><a href="index.html" class="active"> Forside</a></li>
+                <li class="nr2"><a href="portfolio.html">Projekter</a></li>
+                <li class="nr3"><a href="om_mig.html">Karolines Eventyr</a></li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -48,11 +49,12 @@
 
 
 
-
-        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-            type="module"></script>
-        <dotlottie-player src="https://lottie.host/c38ade36-78c2-4ba2-9d1d-31be42a98b60/MxCHdHAPXP.lottie"
-            background="transparent" speed="1" loop autoplay></dotlottie-player>
+        <div class="hero_video">
+            <video autoplay muted loop playsinline>
+                <source src="vid/hero_ny.mp4" type="video/mp4">
+                Din browser understøtter ikke videoer.
+            </video>
+        </div>
 
         <div class="om_mig">
             <img class="mig" src="img/mig-2.webp" alt="Karoline">
@@ -74,6 +76,8 @@
                     Som person er jeg målrettet, idérig og hjælpsom. Jeg elsker at arbejde med nye ideer og projekter og
                     møder altid
                     udfordringer med et positivt sind og gåpåmod.</p>
+
+                <!-- MED HJÆLP FRA CHATGBT -->
                 <div class="tab_sammen">
                     <div class="tabs-container">
                         <ul id="menu1">

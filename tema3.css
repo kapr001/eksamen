@@ -79,6 +79,7 @@ a {
   text-decoration: none; /** Fjerner underscore **/
   color: var(--tekstknap-color); /** Farve **/
   font-family: roboto; /** Font **/
+  font-weight: 400;
 }
 
 /** HOVER FARVE **/

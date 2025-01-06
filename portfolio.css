@@ -25,6 +25,19 @@ p {
   font-family: lato; /** FONT **/
 }
 
+/** HERO IMAGE **/
+/** PLACEHOLDER U LOTTIE **/
+.herolottie {
+  background-image: url(img/hero_projekt.webp); /** Billede **/
+  background-size: cover; /** Dækker hele element **/
+}
+
+.hero-image {
+  width: 100%; /** MAKS **/
+  height: 100%; /** MAKS **/
+  background-size: cover; /** Dækker hele element **/
+}
+
 /** KNAPPER I PORTFOLIO **/
 .knap1 {
   display: inline-block; /* Gør linket til en blok, der kan styles */

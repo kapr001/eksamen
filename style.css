@@ -15,7 +15,7 @@
 }
 
 img {
-  width: 100%;
+  width: 100%; /** Responsive billeder **/
   height: auto; /* Bevarer billedets proportioner */
 }
 
@@ -35,8 +35,7 @@ body {
   padding-right: 1rem; /** Højre luft **/
 }
 
-/** Menu **/
-
+/** MENU **/
 .menu a {
   padding: 15px; /** Mellemrum **/
   text-decoration: none; /** Fjerner underscore **/
@@ -60,7 +59,7 @@ body {
   font-weight: 500; /** Lidt fed **/
 }
 
-/** underlinje **/
+/** UNDERLINJE **/
 .menu a {
   position: relative; /** Flytbar **/
   text-decoration: none; /** Fjerner underscore **/
@@ -68,8 +67,8 @@ body {
 }
 
 .menu a::after {
-  content: "";
-  position: absolute;
+  content: ""; /** Gør streg mulig **/
+  position: absolute; /** Ødelægger ik andre elementer **/
   left: 0; /** Får linjen under tekst **/
   bottom: 0; /** Får linjen under tekst **/
   width: 0; /** Får linjen under tekst **/
@@ -84,6 +83,8 @@ body {
   width: 100%; /** Underlinjen forbliver for aktive links**/
 }
 
+/** LOGO DESKTOP **/
+/** LOGO 1 **/
 .logo1 {
   width: 80px; /** Sætter bredden **/
   display: block; /** Gør det muligt at billedet sidder midt **/
@@ -92,10 +93,12 @@ body {
   padding-top: 2%; /** Mellemrum i toppen **/
 }
 
+/** LOGO 2 **/
 .logo_2 {
   display: none; /** Fjerner logo i desktop **/
 }
 
+/** BURGER **/
 .burger {
   width: 30px; /** længdre på mburger ***/
   cursor: pointer; /** Gør menuen klikbar **/
@@ -114,10 +117,9 @@ body {
 /** Menu responsiv **/
 @media (max-width: 870px) {
   .menu {
-    font-size: 0.7rem; /** Mindre font **/
-    padding-left: 10%; /** Mindre padding **/
-    padding-right: 10%; /** Mindre padding **/
-    font-weight: bold;
+    font-size: 0.9rem; /** Mindre font **/
+    padding-left: 0%; /** Intet padding **/
+    padding-right: 0%; /** Intet padding **/
   }
 }
 
@@ -126,10 +128,12 @@ body {
   header {
     display: flex;
     justify-content: space-between; /** Menu højre **/
-    padding-bottom: 3%;
+    padding-bottom: 3%; /** Afstand bund **/
     margin-inline: auto; /** Auto i midten **/
   }
 
+  /** LOGO **/
+  /** LOGO 2 **/
   .logo_2 {
     display: inline; /** Logo_2 synlig i mobil **/
     width: 50px; /** px gør at billede ikke justeres **/
@@ -137,22 +141,26 @@ body {
     padding-top: 20%; /** Mellemrum til top **/
   }
 
+  /** LOGO 1 **/
   .logo1 {
-    display: none; /** Logo_1 forsvinder i mobil **/
+    display: none; /** Logo 1 forsvinder i mobil **/
   }
 
+  /** MENU **/
   .menu {
     display: none; /** Menu vises **/
-    margin-top: -25px; /** Samme afstand til top = px **/
+    margin-top: -25px; /** Samme afstand til top **/
     padding-left: 0%; /** Mellemrum venstre **/
     padding-right: 0%; /** Mellemrum højre **/
   }
 
+  /** BURGER **/
+  /** ELEMENTER GENBRUGT FRA VIRKSOMHEDSSITE **/
   .burger {
     display: block; /** Gør burger-menu synlig **/
     margin-left: -20%; /** Mellemrum venstre **/
     margin-top: 60%; /** Mellemrum til top **/
-    padding-bottom: 70%;
+    padding-bottom: 70%; /** Afstand bund **/
   }
 
   .burger.active .line:nth-child(1) {
@@ -178,12 +186,12 @@ body {
     width: 100%; /** Menu fylder hele skærm **/
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /** Skygge **/
     z-index: 10; /** Rykker menu frem foran alt**/
-    text-align: left;
+    text-align: left; /** Tekst til venstre **/
   }
 
   nav.active .menu li {
     margin: 5px 5px; /** Mellemrum mellem links **/
-    padding-left: 1%;
+    padding-left: 1%; /** Mellemrum venstre **/
   }
 
   nav.active .menu a {
@@ -192,11 +200,11 @@ body {
 
   .menu a:hover::after,
   .menu a.active::after {
-    width: 0%; /** Underlinjen forsvinder **/
+    width: 0%; /** Underlinjen forsvinder mobil **/
   }
 
   .menu li {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgray; /** HR under links **/
   }
 }
 

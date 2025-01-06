@@ -366,3 +366,17 @@ h4 {
   height: 600px;
   background-position: center; /* Centrer billedet */
 }
+
+.hero_video {
+  width: 100%; /** 100% **/
+  max-width: 1200px; /** 1200 px **/
+  height: auto; /** Bevarer forholdet mellem bredde og højde **/
+  aspect-ratio: 2 / 1; /** 1200px x 600px **/
+  margin: 0 auto; /** Centrerer videoen **/
+}
+
+.hero_video video {
+  width: 100%; /** 100% **/
+  height: 100%; /** 100% **/
+  object-fit: cover; /** Gør videoen responsiv **/
+}

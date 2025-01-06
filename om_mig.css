@@ -1,176 +1,42 @@
+/** BILLEDER **/
 img {
-  width: 100%;
-  height: auto;
+  width: 100%; /** Responsiv **/
+  height: auto; /** Auto højde **/
   display: block;
 }
 
+/** H1 **/
 h1 {
-  text-align: center;
-  text-transform: uppercase;
+  text-align: center; /** Centrerer **/
+  text-transform: uppercase; /** Caps lock **/
   font-family: roboto; /** Font **/
 }
 
+/** H2 **/
 h2 {
-  text-align: center;
-  margin-bottom: 2%;
-  font-family: roboto;
-  text-transform: uppercase;
+  text-align: center; /** Centrerer **/
+  margin-bottom: 2%; /** Afstand bund **/
+  font-family: roboto; /** Font **/
+  text-transform: uppercase; /** Caps lock **/
 }
 
+/** H3 **/
 h3 {
-  text-align: center;
-  margin-bottom: 2%;
-  font-family: roboto;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  padding-top: 2%;
+  text-align: center; /** Centrerer **/
+  margin-bottom: 2%; /** Afstand bund **/
+  font-family: roboto; /** Font **/
+  text-transform: uppercase; /** Caps lock **/
+  font-size: 1.8rem; /** Font størrelse **/
+  padding-top: 2%; /** Afstand top **/
 }
 
-.h2_overskrift {
-  margin-bottom: 0%;
-  text-transform: none;
-  font-style: italic;
-  margin-top: -5%;
-}
-
-.h1_overskrift {
-  margin-top: 1%;
-  margin-bottom: 5%;
-}
-
-.h2_ommig {
-  text-align: left;
-  font-size: 1.2rem;
-  margin-bottom: 0%;
-}
-
-.h2_ommig_height {
-  text-align: left;
-  font-size: 1.2rem;
-  margin-bottom: 0%;
-  padding-top: 2%;
-}
-
-.h2_ommig_height1 {
-  text-align: left;
-  font-size: 1.2rem;
-  margin-bottom: -2%;
-  padding-top: 2%;
-}
+/** P **/
 p {
-  line-height: 1.6;
+  line-height: 1.6; /** Linje højde **/
   font-family: lato; /** Font **/
 }
 
-.p_height {
-  padding-top: 2%;
-}
-
-.h3_cv {
-  padding-top: 2%;
-  text-align: left;
-  margin-bottom: 0%;
-  font-size: 1rem;
-}
-
-.h3_cv1 {
-  text-align: left;
-  margin-bottom: 0%;
-  font-size: 1rem;
-}
-
-.om_mig_wave,
-.om_mig_wave2,
-.galleri_serie {
-  width: 100%;
-  aspect-ratio: 1955.98 / 335.42;
-  background-image: url(img/bagg2.svg);
-
-  /** CHATTEN - FOR AT DET ER DET SAMME I CHROME! **/
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.om_mig_wave {
-  padding-bottom: 0%;
-}
-
-@media screen and (max-width: 1000px) {
-  .om_mig_wave {
-    padding-bottom: 2%; /** Større bølge **/
-    padding-top: 0%; /** Større bølge **/
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .om_mig_wave {
-    padding-bottom: 4%; /** Større bølge **/
-    padding-top: 0%; /** Større bølge **/
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .om_mig_wave {
-    padding-bottom: 5%; /** Større bølge **/
-    padding-top: 0%; /** Større bølge **/
-  }
-}
-
-.om_mig_wave2 {
-  padding-bottom: 4%;
-}
-
-@media screen and (max-width: 1000px) {
-  .om_mig_wave2 {
-    padding-bottom: 8%; /** Større bølge **/
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .om_mig_wave2 {
-    padding-bottom: 10%; /** Større bølge **/
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .om_mig_wave2 {
-    padding-bottom: 12%; /** Større bølge **/
-  }
-}
-
-.galleri_serie {
-  padding-bottom: 6%;
-}
-
-@media screen and (max-width: 890px) {
-  .galleri_serie {
-    padding-bottom: 9%; /** Større bølge **/
-  }
-}
-
-.indeni {
-  position: relative;
-  top: 30%;
-}
-
-.indeni2 {
-  position: relative;
-  top: 32%;
-}
-
-.indeni3 {
-  position: relative;
-  top: 35%;
-}
-
-.overskrift {
-  background-image: url(img/bagg.svg);
-  background-size: cover;
-  aspect-ratio: 1938.9/619.3;
-  position: relative;
-  padding-bottom: 10%;
-}
-
+/** VIDEO **/
 .video {
   width: 100%; /** Videoen fylder 100% af dens overordnede element **/
   max-width: 100%; /** Begrænser bredden, hvis den er i et smalt layout **/
@@ -184,110 +50,146 @@ p {
   width: 100%; /** Fylder hele videoens bredde **/
   height: 450px; /** Fast højde **/
   object-fit: cover; /** Tilpasser videoen, så den beskæres **/
-  justify-content: center;
+  justify-content: center; /** Video midt **/
 }
 
-.grid_om_mig {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding-left: 2%;
-  padding-right: 2%;
-  gap: 4%;
-  position: relative;
+/** TEKST I BØLGER **/
+/** OM MIG **/
+.indeni {
+  position: relative; /** Flytbar **/
+  top: 30%; /** Top **/
 }
 
-.h3_tools {
-  font-size: 1rem;
+/** CV **/
+.indeni2 {
+  position: relative; /** Flytbar **/
+  top: 32%; /** Top **/
 }
 
-.grid_om_mig img {
-  width: 55%;
-  margin: auto;
+/** GALLERI **/
+.indeni3 {
+  position: relative; /** Flytbar **/
+  top: 35%; /** Top **/
 }
 
-.grid_1-1-1-1-1 p {
-  text-align: center;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: small;
+/** MIT KREATIVE EVENTYR **/
+.h2_ommig {
+  text-align: left; /** Venstre **/
+  font-size: 1.2rem; /** Font størrelse **/
+  margin-bottom: 0%; /** Ingen afstand **/
 }
 
-.digitale_supplies {
-  top: -5%;
-  position: relative;
-  padding-top: 10%;
-  padding-bottom: 5%;
+/** P I OM MIG **/
+.p_height {
+  padding-top: 2%; /** Afstand top **/
 }
 
-/** KONTAKTFORMULAR **/
-.kontakt_mig {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding-bottom: 10%;
-  margin: auto;
+/** H3 ERF & UDD **/
+.h3_cv {
+  padding-top: 2%; /** Afstand top **/
+  text-align: left; /** Venstre **/
+  margin-bottom: 0%; /** Ingen margin **/
+  font-size: 1rem; /** Tekst størrelse **/
 }
 
-.mig_billede img {
-  width: 80%;
-  margin: auto;
+.h3_cv1 {
+  text-align: left; /** Venstre **/
+  margin-bottom: 0%; /** Ingen marrgin **/
+  font-size: 1rem; /** Tekststørrelse **/
 }
 
-/** KONTAKFORMULAR FRA W3 SCHOOLS **/
-input[type="text"],
-select,
-textarea {
+/** Bølge **/
+.om_mig_wave,
+.om_mig_wave2,
+.galleri_serie {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  font-family: lato;
+  aspect-ratio: 1955.98 / 335.42;
+  background-image: url(img/bagg2.svg);
+  /** CHATTEN - FOR AT DET ER DET SAMME I CHROME! **/
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/** INPUT FRA CHATGBT **/
-input[type="submit"] {
-  display: inline-block; /* Gør linket til en blok, der kan styles */
-  background-color: var(--knap-color); /* Grøn baggrund */
-  padding: 10px 40px; /* Indvendig afstand */
-  text-align: center; /* Centrer tekst */
-  cursor: pointer; /* Hånd-markør */
-  border: none;
-  color: white;
+/** RESPONSIC BØLGE **/
+@media screen and (max-width: 1000px) {
+  .om_mig_wave {
+    padding-bottom: 2%; /** Større bølge **/
+    padding-top: 0%; /** Større bølge **/
+  }
 }
 
-input[type="submit"]:hover {
-  background-color: lavender; /* Mørkere grøn ved hover */
-  font-weight: bold; /** Fed **/
-  transform: scale(1.05); /** Zoomer ind  **/
-  /** Chatten **/
-  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
-  color: var(--hover-tekst);
+/** RESPONSIV BØLGE **/
+@media screen and (max-width: 700px) {
+  .om_mig_wave {
+    padding-bottom: 4%; /** Større bølge **/
+    padding-top: 0%; /** Større bølge **/
+  }
 }
 
-.container {
-  border-radius: 5px;
-  padding: 20px;
+/** RESPONSIV BØLGE **/
+@media screen and (max-width: 620px) {
+  .om_mig_wave {
+    padding-bottom: 5%; /** Større bølge **/
+    padding-top: 0%; /** Større bølge **/
+  }
 }
 
-label {
-  font-family: lato;
+/** CV BØLGE **/
+.om_mig_wave2 {
+  padding-bottom: 4%; /** Afstand bund **/
 }
 
+/** RESPONSIV **/
+@media screen and (max-width: 1000px) {
+  .om_mig_wave2 {
+    padding-bottom: 8%; /** Større bølge **/
+  }
+}
+
+/** RESPONSIV **/
+@media screen and (max-width: 760px) {
+  .om_mig_wave2 {
+    padding-bottom: 10%; /** Større bølge **/
+  }
+}
+
+/** RESPONSIV **/
+@media screen and (max-width: 600px) {
+  .om_mig_wave2 {
+    padding-bottom: 12%; /** Større bølge **/
+  }
+}
+
+/** GALLERI BØLGE **/
+.galleri_serie {
+  padding-bottom: 6%; /** Afstand bund **/
+}
+
+/** RESPONSIV **/
+@media screen and (max-width: 890px) {
+  .galleri_serie {
+    padding-bottom: 9%; /** Større bølge **/
+  }
+}
+
+/** OM MIG **/
+.om_mig_wave {
+  padding-bottom: 0%; /** Ingen padding **/
+}
+
+/** OM MIG DIV **/
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  gap: 20px; /** Mellemrum **/
+  padding-bottom: 5%; /** Afstand bund **/
+  padding-top: 5%; /** Afstand top **/
 }
 
+/** OM MIG BILLEDE **/
 .om_mig_billede {
-  order: -1;
-  margin: auto;
+  order: -1; /** Omvendt rækkefølge **/
+  margin: auto; /** Auto midt */
 }
 
 .grid1,
@@ -340,60 +242,177 @@ label {
   margin: auto;
 }
 
+/** DIGITALE BØLGE **/
+.overskrift {
+  background-image: url(img/bagg.svg);
+  background-size: cover;
+  aspect-ratio: 1938.9/619.3;
+  padding-bottom: 10%; /** Afstand bund **/
+  position: relative;
+}
+
+/** DIGITALE VÆRKTØJER **/
+/** HVORDAN JEG BRUGER **/
+.h2_overskrift {
+  margin-bottom: 0%; /** intet margin **/
+  text-transform: none; /** Alm. **/
+  font-style: italic; /** Kursiv **/
+  margin-top: -5%; /** Afstand top **/
+}
+
+/** MINE DIGITALE VÆRKTØJER **/
+.h1_overskrift {
+  margin-top: 1%; /** Afstand top **/
+  margin-bottom: 5%; /** Afstand bund **/
+}
+
+/** GRIDDEN **/
+.grid_om_mig {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 2%; /** Padding **/
+  padding-right: 2%; /** Padding **/
+  gap: 4%; /** Mellemrum **/
+  position: relative; /** Flytbar **/
+}
+
+/** IKONER **/
+.grid_om_mig img {
+  width: 55%; /** Størrelse **/
+  margin: auto; /** Midt auto **/
+}
+
+/** TEKST **/
+.grid_1-1-1-1-1 p {
+  text-align: center; /** Midt **/
+  font-family: roboto; /** Font **/
+  font-weight: bold; /** Fed **/
+  font-size: small; /** Lille p **/
+}
+
+/** BØLGEN **/
+.digitale_supplies {
+  top: -5%; /** top **/
+  position: relative; /** Flytbar **/
+  padding-top: 10%; /** Afstand top **/
+  padding-bottom: 8%; /** Afstand bund **/
+}
+
+/** APP NAVN **/
+.h3_tools {
+  font-size: 1rem; /** Font størrelse **/
+}
+
+/** KONTAKT + BILLEDE **/
+.kontakt_mig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /** Mellemrum **/
+  padding-bottom: 10%; /** Afstand bund **/
+  margin: auto; /** Auto i midten **/
+}
+
+.mig_billede img {
+  width: 80%; /** Mindre billede **/
+  margin: auto; /** Auto i midten **/
+}
+
+/** KONTAKFORMULAR FRA W3 SCHOOLS M. EGEN STYLING **/
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /** Fylder det hele **/
+  padding: 12px; /** Større felter **/
+  border: 1px solid #ccc; /** Kant farve **/
+  border-radius: 4px; /** Rundere hjørner **/
+  margin-top: 6px; /** Felt afstand til h **/
+  margin-bottom: 16px; /** Afstand ef. boks **/
+  font-family: lato; /** Font **/
+}
+
+/** INPUT KNAP **/
+input[type="submit"] {
+  display: inline-block; /** Blok, der kan styles **/
+  background-color: var(--knap-color); /**  baggrund **/
+  padding: 10px 40px; /** Indvendig afstand **/
+  text-align: center; /** Centrer **/
+  cursor: pointer; /** Mussehånd **/
+  border: none; /** Ingen kant **/
+  color: white; /** Tekstfarve **/
+}
+
+input[type="submit"]:hover {
+  background-color: lavender; /* Hover farve  */
+  font-weight: bold; /** Fed **/
+  transform: scale(1.05); /** Zoomer ind  **/
+  /** Chatten **/
+  transition: transform 0.3s ease; /** Tilføjer en glidende overgang **/
+  color: var(--hover-tekst); /** Tekstfarve **/
+}
+
+/** FULDE KONTAKT BOKS **/
+.container {
+  padding: 20px; /** Padding **/
+}
+
+label {
+  font-family: lato; /** Font **/
+}
+
 /** PROCENTBAR FRA GEEKSFORGEEKS.ORG **/
 /** Med egen styling **/
-
+/** 80% bar **/
 .udenom {
-  margin-top: 2%;
-  background-color: #66476f;
-  border-radius: 15px;
-  margin-bottom: 8%;
+  margin-top: 2%; /** Afstan top **/
+  background-color: #66476f; /** 80% **/
+  border-radius: 15px; /** Runde hjørner **/
+  margin-bottom: 8%; /** Afstand bund **/
 }
 
+/** 20% bar **/
 .container_procent {
-  width: 20%;
-  border-radius: 15px;
-  font-family: lato;
+  width: 20%; /** 20 % done ØØ/
+  border-radius: 15px; /** runde hjørner **/
+  font-family: lato; /** Font **/
 }
 
+/** 20% bar **/
 .skill {
-  background-color: var(--pink-color);
-  color: black;
-  padding: 1%;
-  text-align: right;
-  font-size: 20px;
-  border-radius: 15px;
+  background-color: var(--pink-color); /** Farve **/
+  color: black; /** Font farve **/
+  padding: 1%; /** Padding **/
+  text-align: right; /** Højre tekst **/
+  font-size: 20px; /** Tekst størrelse **/
+  border-radius: 15px; /** Runde hjørner **/
 }
 
-.html {
-  width: 80%;
-}
-
+/** GALLERI AF EGNE PROJEKTER **/
 .galleri_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 10px; /** Mellemrum **/
 }
 
 .galleri_1 {
-  grid-column: 1/2;
+  grid-column: 1/2; /** Fylder 1 i 1**/
 }
 
 .galleri_2 {
-  grid-column: 2/3;
+  grid-column: 2/3; /** Fylder 1 i 2 **/
 }
 
 .galleri_3 {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 2; /** Fylder 2 i 3-4 **/
+  grid-row: span 2; /** Fylder 2 i 1-2 **/
 }
 
 .galleri_4 {
-  grid-column: span 2;
+  grid-column: span 2; /** Fylder 2 i 1-2**/
 }
 
 .galleri_5 {
-  grid-column: span 4;
+  grid-column: span 4; /** Fylder 4 i 3 **/
 }
 
 .galleri_grid img {
@@ -401,27 +420,31 @@ label {
   align-self: stretch;
 }
 
+/** RESPONSIV **/
 @media (max-width: 770px) {
   /** DIGITALE VÆRKTØJER **/
   .grid_om_mig {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /** 2 kolonner nu **/
   }
 
+  /** BILLEDE **/
   .grid_om_mig img {
-    width: 30%;
+    width: 30%; /** Billede mindre **/
   }
 
+  /** OVERSKRIFT **/
   .overskrift {
-    padding-top: 15%;
-    padding-bottom: 25%;
+    padding-top: 15%; /** Padding **/
+    padding-bottom: 25%; /** Padding **/
   }
 }
 
+/** MOBILFORMAT **/
 @media (max-width: 600px) {
   /** DIGITALE VÆRKTØJER **/
   .overskrift {
-    padding-top: 40%;
-    padding-bottom: 45%;
+    padding-top: 40%; /** Padding **/
+    padding-bottom: 45%; /** Padding **/
   }
 
   /** VIDEO **/
@@ -441,53 +464,54 @@ label {
     padding-bottom: 15%; /** Padding = Større bølge **/
   }
 
+  /** EGET GALLERI **/
   .galleri_serie {
-    padding-top: 5%;
-    padding-bottom: 15%;
+    padding-top: 5%; /** Padding **/
+    padding-bottom: 15%; /** Padding **/
   }
 
   /** MIT KREATIVE UNIVERS **/
   .section1 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /** 1 kolonne **/
   }
 
   .om_mig_billede {
-    order: 1;
-    padding-bottom: 20%;
+    order: 1; /** Rigtig rækkefølge **/
+    padding-bottom: 20%; /** Padding **/
   }
 
   /** KOMPETENCER & ERFARING **/
   .grid1,
   .grid3 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /** 1 kolonne **/
     padding-bottom: 20%; /** Mellemrum tilføjet **/
   }
 
   /** UDDANNELSE **/
   .grid2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /** 1 kolonne **/
     padding-bottom: 20%; /** Mellemrum tilføjet **/
   }
 
   .two2 {
-    order: 1;
+    order: 1; /** Rigtig rækkefølge **/
   }
 
   /** KONTAKT MIG **/
   .kontakt_mig {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /** 1 kolonne **/
   }
 
   .container {
-    order: -1;
+    order: -1; /** Rigtig rækkefølge **/
   }
 
   /** GALLERI **/
   .galleri_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 10px; /** Mellemrum **/
   }
 
   .galleri_1 {
