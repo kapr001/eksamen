@@ -87,6 +87,9 @@ a:hover {
   color: var(--hover-tekst);
 }
 
+.resultat_knap {
+  text-align: center;
+}
 /** TEKSTFELT EFTER KNAP/HERO **/
 .p_tema {
   text-align: center; /** Centrerer **/
@@ -350,6 +353,11 @@ a:hover {
 
   .billede_tema2 {
     width: 350px; /** Mindre billede i mobil **/
+  }
+
+  /** H3 **/
+  h3 {
+    font-size: 1.7rem; /** Størrelse **/
   }
 }
 
@@ -820,4 +828,8 @@ a:hover {
   h3 {
     margin-bottom: -1%;
   }
+}
+
+.knap:hover {
+  font-weight: bold;
 }
