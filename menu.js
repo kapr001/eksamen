@@ -1,16 +1,26 @@
 // BURGER MENU
+// Henter bruger
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
 const menu = document.querySelector(".menu");
 
+// Klik
 burger.addEventListener("click", burgerClick);
 function burgerClick() {
+  // Tilføj/fjern avtive burger = streger
   burger.classList.toggle("active");
+
+  // Tilføj/fjern active nav = menu
   nav.classList.toggle("active");
 }
+
+// klik på menuen
 menu.addEventListener("click", menuClick);
 function menuClick() {
+  // Lukker burger-ikon
   burger.classList.remove("active");
+
+  // Skjuler menu
   nav.classList.remove("active");
 }
 
